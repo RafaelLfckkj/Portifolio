@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+
 import Sidebar from "./components/sidebar";
+import Footer from "./components/footer";
+
+import ParticlesBackground from "./components/ParticlesBackground";
+
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-// import ParticlesBackground from "./components/ParticlesBackground";
 config.autoAddCss = false;
 
 const geistSans = Geist({
@@ -34,9 +39,18 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
-       
-        <Sidebar />
+
+      <ParticlesBackground />
+
+        <main style={{ position: "relative", zIndex: 1 }}>
+          {children}
+
+          <Sidebar />
+        </main>
+
+        <footer style={{ position: "relative", zIndex: 1 }}>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
