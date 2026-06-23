@@ -12,13 +12,16 @@ import {
   faJava,
   faGithub,
   faWindows,
+  faTrello,
+  faFigma,
+  faGoogleDrive,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {GitHubCalendar} from "react-github-calendar";
 
 import CardSkill from "../components/cardSkill";
 import CardSkillEx from "../components/cardSkillEx";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faTerminal } from "@fortawesome/free-solid-svg-icons";
 
 import CardCertificados from "../components/cardCertificados";
 
@@ -90,7 +93,7 @@ export default function Sobre() {
           />
           <CardSkill
             titulo="Outros"
-            habilidades={[faGitAlt, faGithub, faWindows]}
+            habilidades={[faGitAlt, faGithub, faWindows, faTrello, faFigma, faGoogleDrive, faTerminal]}
           />
         </div>
 
