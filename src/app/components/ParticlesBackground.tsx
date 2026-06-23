@@ -14,7 +14,7 @@ export default function ParticlesBackground() {
 
   const options: ISourceOptions = {
     fullScreen: { enable: true, zIndex: -1 },
-    background: { color: "#050E15" },
+    // background: { color: "#050E15" }, 
     fpsLimit: 120,
     interactivity: {
       events: {
