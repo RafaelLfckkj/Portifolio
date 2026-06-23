@@ -10,9 +10,9 @@ export default function Sobre() {
   return (
     <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 ">
       {/* textos sobre mim */}
-      <div className="flex justify-center items-center w-[960px] gap-32">
+      <div className="flex justify-center items-center w-240 gap-32">
         {/* titulos */}
-        <div className="w-[400px]">
+        <div className="w-100">
           <h1 className="text-5xl mb-6 text-[#7ED8BF]">Quem sou eu?</h1>
 
           <h2 className="text-2xl leading-tight">
@@ -25,7 +25,7 @@ export default function Sobre() {
 
         {/* textos */}
         <div>
-          <p className="w-[500px] text-sm leading-relaxed text-justify">
+          <p className="w-125 text-sm leading-relaxed text-justify">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
             <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
             <span className="text-[#7ED8BF]">UNASP</span>. Estou me

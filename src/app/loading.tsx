@@ -21,7 +21,7 @@ export default function Loading() {
     </div>
 
     <div
-      className="absolute inset-0 bg-gradient-to-tr from-[#7ED8BF]/10 via-transparent to-[#7ED8BF]/5 animate-pulse rounded-full blur-sm"
+      className="absolute inset-0 bg-linear-to-tr from-[#7ED8BF]/10 via-transparent to-[#7ED8BF]/5 animate-pulse rounded-full blur-sm"
     ></div>
   </div>
 </div>

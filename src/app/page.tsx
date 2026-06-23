@@ -45,7 +45,7 @@ export default function Home() {
 
         <div className="text-3xl md:text-3xl font-medium text-[#7ED8BF] flex items-center h-10 mt-2">
           <span ref={elementoDigitando}></span>
-          <span className="inline-block w-[2px] h-[1.1em] bg-[#7ED8BF] ml-1 animate-[piscar_0.75s_step-end_infinite]"></span>
+          <span className="inline-block w-0.5 h-[1.1em] bg-[#7ED8BF] ml-1 animate-[piscar_0.75s_step-end_infinite]"></span>
         </div>
 
         {/* Botões */}

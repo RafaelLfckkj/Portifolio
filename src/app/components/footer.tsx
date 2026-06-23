@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="absolute bottom-5 left-1/2 -translate-x-1/2">
-      <div className="p-3 max-w-[627px] bg-[#05131E] rounded-3xl flex items-center justify-between mx-auto self-end px-10 gap-5  ">
+      <div className="p-3 max-w-156.75 bg-[#05131E] rounded-3xl flex items-center justify-between mx-auto self-end px-10 gap-5  ">
         <div className="flex gap-5">
           <FontAwesomeIcon className="cursor-pointer" icon={faGithub} size="lg" />
           <FontAwesomeIcon className="cursor-pointer" icon={faDiscord} size="lg" />
