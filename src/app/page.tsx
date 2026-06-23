@@ -60,7 +60,7 @@ export default function Home() {
 
           <Link
             className="border rounded-3xl mt-6 px-6 py-2 border-[#7ED8BF] hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl font-bold"
-            href="/"
+            href="https://wa.me/5511948751574"
           >
             Fale Comigo
           </Link>
