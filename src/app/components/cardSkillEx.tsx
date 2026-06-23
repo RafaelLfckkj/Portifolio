@@ -17,11 +17,11 @@ export default function CardSkill({ titulo, habilidades }: CardSkillProps) {
           <FontAwesomeIcon
             key={index}
             icon={icone}
-            className="text-3xl"
+            className="text-4xl"
           />
         ))}
         <div className="grid grid-cols-4 gap-4">
-            <SiNextdotjs className="text-3xl" />
+            <SiNextdotjs className="text-4xl" />
         </div>
 
       </div>

@@ -1,10 +1,26 @@
-import { faHtml5, faCss3, faReact, faNodeJs, faGitAlt, faJs, faTailwindCss, faAngular, faTypescript, faPython, faJava, faGithub, faWindows } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHtml5,
+  faCss3,
+  faReact,
+  faNodeJs,
+  faGitAlt,
+  faJs,
+  faTailwindCss,
+  faAngular,
+  faTypescript,
+  faPython,
+  faJava,
+  faGithub,
+  faWindows,
+} from "@fortawesome/free-brands-svg-icons";
 
-
+import {GitHubCalendar} from "react-github-calendar";
 
 import CardSkill from "../components/cardSkill";
 import CardSkillEx from "../components/cardSkillEx";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+
+import CardCertificados from "../components/cardCertificados";
 
 export default function Sobre() {
   return (
@@ -40,7 +56,7 @@ export default function Sobre() {
             preparar para oportunidades{" "}
             <span className="text-[#7ED8BF]">globais</span>, e estou aberto a
             oportunidades
-            <span className="text-[#7ED8BF]"> internacionais</span> <br />
+            <span className="text-[#7ED8BF]"> internacionais.</span> <br />
             Também atuo como <span className="text-[#7ED8BF]">
               voluntário
             </span>{" "}
@@ -50,19 +66,76 @@ export default function Sobre() {
             dia.
           </p>
         </div>
-      </div> 
+      </div>
 
-        <div className="mt-10">
-            
-            <h1 className="text-center text-3xl font-bold">Habilidades</h1>
+      <div className="mt-10">
+        <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-            <div className="flex justify-center items-center gap-6 mt-10">
-                <CardSkillEx titulo="Front-End" habilidades={[faHtml5, faCss3, faJs, faReact, faTailwindCss, faAngular, faTypescript]}/>
-                <CardSkill titulo="Back-End" habilidades={[faJava, faPython, faNodeJs, faDatabase ]}/>
-                <CardSkill titulo="Outros" habilidades={[faGitAlt, faGithub, faWindows]}/>
-            </div>
-
+        <div className="flex justify-center items-center gap-6 mt-10">
+          <CardSkillEx
+            titulo="Front-End"
+            habilidades={[
+              faHtml5,
+              faCss3,
+              faJs,
+              faReact,
+              faTailwindCss,
+              faAngular,
+              faTypescript,
+            ]}
+          />
+          <CardSkill
+            titulo="Back-End"
+            habilidades={[faJava, faPython, faNodeJs, faDatabase]}
+          />
+          <CardSkill
+            titulo="Outros"
+            habilidades={[faGitAlt, faGithub, faWindows]}
+          />
         </div>
+
+        <div className="mt-10 bg-[#061825] rounded-2xl p-6">
+          <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
+            Certificados
+          </h1>
+
+          <div className="grid grid-cols-3 justify-center items-center gap-6">
+            <CardCertificados
+              titulo="Alura"
+              habilidades="HTML, CSS, JavaScript  "
+            />
+            <CardCertificados
+              titulo="Alura"
+              habilidades="HTML, CSS, JavaScript  "
+            />
+            <CardCertificados
+              titulo="Alura"
+              habilidades="HTML, CSS, JavaScript  "
+            />
+            <CardCertificados
+              titulo="Alura"
+              habilidades="HTML, CSS, JavaScript  "
+            />
+            <CardCertificados
+              titulo="Alura"
+              habilidades="HTML, CSS, JavaScript  "
+            />
+            <CardCertificados
+              titulo="Alura"
+              habilidades="HTML, CSS, JavaScript  "
+            />
+          </div>
+        </div>
+
+        <div className="mt-25">
+          <h1 className="text-center font-bold text-6xl">
+            Minhas <br />
+            <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
+          </h1>
+
+          <GitHubCalendar username="rafaellfckkj" colorScheme="light" className="mt-10 mb-25" />
+        </div>
+      </div>
     </div>
   );
 }

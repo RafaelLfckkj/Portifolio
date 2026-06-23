@@ -17,10 +17,9 @@ export default function CardSkill({ titulo, habilidades }: CardSkillProps) {
           <FontAwesomeIcon
             key={index}
             icon={icone}
-            className="text-3xl"
-          />
+            className="text-4xl"
+        />
         ))}
-
       </div>
     </div>
   )
