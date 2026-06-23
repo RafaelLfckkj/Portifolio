@@ -26,6 +26,13 @@ export const metadata: Metadata = {
   description: "Portifolio do Rafael, Desenvolvedor full stack",
 };
 
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap', // Melhora o carregamento evitando texto invisível
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,9 +41,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${inter.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col text-shadow-lg">
+      <body className="min-h-full flex flex-col text-shadow-lg text-white">
 
         <div className="fixed inset-0 -z-10 bg-gradient-portfolio">
           <ParticlesBackground />

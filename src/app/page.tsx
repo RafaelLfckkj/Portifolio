@@ -51,7 +51,7 @@ export default function Home() {
         {/* Botões */}
         <div className="flex gap-4 ">
           <Link
-            className="mt-6 px-6 py-2 bg-[#62a894] text-white rounded-3xl hover:bg-[#3b7d69] transition-colors duration-300 shadow-xl"
+            className="mt-6 px-6 py-2 bg-[#62a894] text-white rounded-3xl hover:bg-[#3b7d69] transition-colors duration-300 shadow-xl font-bold"
             href="/projetos"
           >
             Ver Projetos
@@ -59,7 +59,7 @@ export default function Home() {
           </Link>
 
           <Link
-            className="border rounded-3xl mt-6 px-6 py-2 border-[#7ED8BF] hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl"
+            className="border rounded-3xl mt-6 px-6 py-2 border-[#7ED8BF] hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl font-bold"
             href="/"
           >
             Fale Comigo
