@@ -1,3 +1,11 @@
+import { faHtml5, faCss3, faReact, faNodeJs, faGitAlt, faJs, faTailwindCss, faAngular, faTypescript, faPython, faJava, faGithub, faWindows } from "@fortawesome/free-brands-svg-icons";
+
+
+
+import CardSkill from "../components/cardSkill";
+import CardSkillEx from "../components/cardSkillEx";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+
 export default function Sobre() {
   return (
     <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 ">
@@ -42,8 +50,19 @@ export default function Sobre() {
             dia.
           </p>
         </div>
-      </div>
+      </div> 
 
+        <div className="mt-10">
+            
+            <h1 className="text-center text-3xl font-bold">Habilidades</h1>
+
+            <div className="flex justify-center items-center gap-6 mt-10">
+                <CardSkillEx titulo="Front-End" habilidades={[faHtml5, faCss3, faJs, faReact, faTailwindCss, faAngular, faTypescript]}/>
+                <CardSkill titulo="Back-End" habilidades={[faJava, faPython, faNodeJs, faDatabase ]}/>
+                <CardSkill titulo="Outros" habilidades={[faGitAlt, faGithub, faWindows]}/>
+            </div>
+
+        </div>
     </div>
   );
 }
