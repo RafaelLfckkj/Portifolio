@@ -122,7 +122,7 @@ export default function Contato() {
               <p className="ml-8">
                 <span className="text-blue-400">skills:</span>{" "}
                 <span className="text-green-400">
-                  [&quot;HTML&quot;, &quot;CSS&quot;, &quot;JavaScript&quot;]
+                  [&quot;Java&quot;, &quot;Node.js&quot;, &quot;Next.js&quot;]
                 </span>
                 ,
               </p>
