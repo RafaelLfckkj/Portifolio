@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
+import CardProjeto from "../components/cardProjeto";
+
 export default function Projetos() {
   return (
     <div className="mb-50">
@@ -14,8 +16,8 @@ export default function Projetos() {
       </div>
 
       {/* Filtração dos projetos */}
-      <div className="flex gap-3 justify-center items-center mt-13">
-        <div className="mr-40 w-82.5"> 
+      <div className="flex gap-100 justify-center items-center mt-13">
+        <div className="mr-50 w-82.5">
           <div className="relative">
             <input
               type="text"
@@ -41,11 +43,43 @@ export default function Projetos() {
             <option value="pt">Mobile</option>
           </select>
         </div>
-
       </div>
 
 
-
+    {/* Card dos Projetos  */}
+      <div className="max-w-[1100px] mx-auto mt-16">
+        <div
+          className="
+      grid
+      grid-cols-1
+      md:grid-cols-2
+      xl:grid-cols-3
+      gap-7
+      place-items-center
+    "
+        >
+          <CardProjeto
+            titulo="Portifolio"
+            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
+            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+          />
+          <CardProjeto
+            titulo="Portifolio"
+            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
+            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+          />
+          <CardProjeto
+            titulo="Portifolio"
+            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
+            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+          />
+          <CardProjeto
+            titulo="Portifolio"
+            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
+            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+          />
+        </div>
+      </div>
     </div>
   );
 }
