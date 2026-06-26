@@ -31,22 +31,33 @@ export default function Contato() {
 
         {/* Icones */}
         <div className="text-3xl mb-15">
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="mr-5 cursor-pointer hover:text-[33px] duration-150 hover:text-black"
-          />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="mr-5 cursor-pointer hover:text-[33px] duration-150 hover:text-blue-500"
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="mr-5 cursor-pointer hover:text-[33px] duration-150 hover:text-pink-400"
-          />
-          <FontAwesomeIcon
-            icon={faDiscord}
-            className="cursor-pointer hover:text-[33px] duration-150 hover:text-blue-600"
-          />
+          <Link href="https://github.com/RafaelLfckkj">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="mr-5 cursor-pointer hover:text-[33px] duration-150 hover:text-black"
+            />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/rafaellfckkj/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="mr-5 cursor-pointer hover:text-[33px] duration-150 hover:text-blue-500"
+            />
+          </Link>
+
+          <Link href="https://www.instagram.com/rafaellfckkj/">
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="mr-5 cursor-pointer hover:text-[33px] duration-150 hover:text-pink-400"
+            />
+          </Link>
+
+          <Link href="https://discord.com/users/583432722924568652">
+            <FontAwesomeIcon
+              icon={faDiscord}
+              className="cursor-pointer hover:text-[33px] duration-150 hover:text-blue-600"
+            />
+          </Link>
         </div>
 
         {/* Botões */}
@@ -111,12 +122,18 @@ export default function Contato() {
 
               <p className="ml-8">
                 <span className="text-blue-400">name:</span>{" "}
-                <span className="text-green-400">&quot;Rafael de Oliveira&quot;</span>,
+                <span className="text-green-400">
+                  &quot;Rafael de Oliveira&quot;
+                </span>
+                ,
               </p>
 
               <p className="ml-8">
                 <span className="text-blue-400">role:</span>{" "}
-                <span className="text-green-400">&quot;Full Stack Developer&quot;</span>,
+                <span className="text-green-400">
+                  &quot;Full Stack Developer&quot;
+                </span>
+                ,
               </p>
 
               <p className="ml-8">
@@ -129,14 +146,19 @@ export default function Contato() {
 
               <p className="ml-8">
                 <span className="text-blue-400">passion:</span>{" "}
-                <span className="text-green-400">&quot;Criar soluções&quot;</span>,
+                <span className="text-green-400">
+                  &quot;Criar soluções&quot;
+                </span>
+                ,
               </p>
 
               <p className="ml-8">
                 <span className="text-blue-400">code:</span>{" "}
                 <span className="text-white">()</span>{" "}
                 <span className="text-white">{"=>"}</span>{" "}
-                <span className="text-green-400">&quot;Sempre aprendendo!&quot;</span>
+                <span className="text-green-400">
+                  &quot;Sempre aprendendo!&quot;
+                </span>
               </p>
 
               <p className="text-white">{"};"}</p>
