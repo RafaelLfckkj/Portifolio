@@ -1,3 +1,9 @@
+"use client" // necessário aqui agora, por causa do useState
+
+import { useState } from "react"
+import ModalCurriculo from "../components/modalCurriculo"
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -8,6 +14,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 import Link from "next/link";
 
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +22,9 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Botao from "../components/botao";
 
 export default function Contato() {
+
+    const [modalAberto, setModalAberto] = useState(false)
+
   return (
     <div className="mb-30">
       {/* Textos e etc */}
@@ -62,7 +72,10 @@ export default function Contato() {
 
         {/* Botões */}
         <div className="flex gap-16 justify-center items-center">
+          <div onClick={() => setModalAberto(true)}>
+
           <Botao texto="Baixar Curriculo" icone={faDownload} />
+          </div>
 
           <Link href="https://wa.me/5511948751574">
             <Botao texto="Vamos Conversar" icone={faWhatsapp} />
@@ -166,6 +179,7 @@ export default function Contato() {
           </div>
         </div>
       </div>
+      <ModalCurriculo isOpen={modalAberto} onClose={() => setModalAberto(false)} />
     </div>
   );
 }
