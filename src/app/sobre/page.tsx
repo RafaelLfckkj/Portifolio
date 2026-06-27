@@ -15,9 +15,12 @@ import {
   faTrello,
   faFigma,
   faGoogleDrive,
+  faOpera,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {GitHubCalendar} from "react-github-calendar";
+import { SiNextdotjs } from "react-icons/si";
+
+import { GitHubCalendar } from "react-github-calendar";
 
 import CardSkill from "../components/cardSkill";
 import CardSkillEx from "../components/cardSkillEx";
@@ -52,6 +55,7 @@ export default function Sobre() {
             atuar como desenvolvedor{" "}
             <span className="text-[#7ED8BF]">Backend ou Full-Stack. </span>
             <br />
+            <br />
             <span className="text-[#7ED8BF]">Sou apaixonado</span> por
             tecnologia, animes e jogos, e estou sempre buscando expandir meus
             horizontes estudo{" "}
@@ -59,7 +63,8 @@ export default function Sobre() {
             preparar para oportunidades{" "}
             <span className="text-[#7ED8BF]">globais</span>, e estou aberto a
             oportunidades
-            <span className="text-[#7ED8BF]"> internacionais.</span> <br />
+            <span className="text-[#7ED8BF]"> internacionais.</span> <br />{" "}
+            <br />
             Também atuo como <span className="text-[#7ED8BF]">
               voluntário
             </span>{" "}
@@ -78,22 +83,37 @@ export default function Sobre() {
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
-              faHtml5,
-              faCss3,
-              faJs,
-              faReact,
-              faTailwindCss,
-              faAngular,
-              faTypescript,
+              { icone: faHtml5, nome: "HTML5" },
+              { icone: faCss3, nome: "CSS3" },
+              { icone: faJs, nome: "JavaScript" },
+              { icone: faReact, nome: "React" },
+              { icone: faTailwindCss, nome: "Tailwind CSS" },
+              { icone: faAngular, nome: "Angular" },
+              { icone: faTypescript, nome: "TypeScript" },
+              { icone: SiNextdotjs, nome: "Next.js", tipo: "ri" },
             ]}
           />
           <CardSkill
             titulo="Back-End"
-            habilidades={[faJava, faPython, faNodeJs, faDatabase]}
+            habilidades={[
+              { icone: faJava, nome: "Java" },
+              { icone: faPython, nome: "Python" },
+              { icone: faNodeJs, nome: "Node.js" },
+              { icone: faDatabase, nome: "SQL, MySql" },
+            ]}
           />
           <CardSkill
             titulo="Outros"
-            habilidades={[faGitAlt, faGithub, faWindows, faTrello, faFigma, faGoogleDrive, faTerminal]}
+            habilidades={[
+              { icone: faGitAlt, nome: "Git" },
+              { icone: faGithub, nome: "GitHub" },
+              { icone: faWindows, nome: "Windows " },
+              { icone: faTrello, nome: "Trello" },
+              { icone: faFigma, nome: "Figma" },
+              { icone: faGoogleDrive, nome: "Google Drive" },
+              { icone: faTerminal, nome: "Terminal" },
+              { icone: faOpera, nome: "Opera" },
+            ]}
           />
         </div>
 
@@ -136,7 +156,11 @@ export default function Sobre() {
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
 
-          <GitHubCalendar username="rafaellfckkj" colorScheme="light" className="mt-10 mb-25" />
+          <GitHubCalendar
+            username="rafaellfckkj"
+            colorScheme="light"
+            className="mt-10 mb-25"
+          />
         </div>
       </div>
     </div>

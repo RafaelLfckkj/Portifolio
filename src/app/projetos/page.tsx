@@ -47,7 +47,7 @@ export default function Projetos() {
 
 
     {/* Card dos Projetos  */}
-      <div className="max-w-[1100px] mx-auto mt-16">
+      <div className="max-w-275 mx-auto mt-16">
         <div
           className="
       grid
