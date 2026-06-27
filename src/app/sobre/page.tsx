@@ -124,16 +124,16 @@ export default function Sobre() {
 
           <div className="grid grid-cols-3 justify-center items-center gap-6">
             <CardCertificados
-              titulo="Alura"
-              habilidades="HTML, CSS, JavaScript  "
+              titulo="Udemy"
+              habilidades="Java COMPLETO"
             />
             <CardCertificados
-              titulo="Alura"
-              habilidades="HTML, CSS, JavaScript  "
+              titulo="Udemy"
+              habilidades="Banco de Dados SQL"
             />
             <CardCertificados
-              titulo="Alura"
-              habilidades="HTML, CSS, JavaScript  "
+              titulo="Santander Academy"
+              habilidades="BootCamp - em andamento"
             />
             <CardCertificados
               titulo="Alura"
