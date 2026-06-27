@@ -28,25 +28,25 @@ export default function Sidebar() {
           <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
             
             <FontAwesomeIcon icon={faHouse} size="lg" />
-            <Link className="hidden group-hover:block ml-2 " href="/">
+            <Link className="hidden group-hover:block ml-2 hover:underline duration-100" href="/">
               Home
             </Link>
           </li>
           <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
             <FontAwesomeIcon icon={faUser} size="lg" />
-            <Link className="hidden group-hover:block ml-2 whitespace-nowrap" href="/sobre">
+            <Link className="hidden group-hover:block ml-2 whitespace-nowrap hover:underline duration-100" href="/sobre">
               Sobre Mim
             </Link>
           </li>
           <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
             <FontAwesomeIcon icon={faLightbulb} size="lg" />
-            <Link className="hidden group-hover:block ml-2" href="/projetos">
+            <Link className="hidden group-hover:block ml-2 hover:underline duration-100" href="/projetos">
               Projetos
             </Link>
           </li>
           <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
-            <Link className="hidden group-hover:block ml-2" href="/contato">
+            <Link className="hidden group-hover:block ml-2 hover:underline duration-100" href="/contato">
               Contato
             </Link>
           </li>
