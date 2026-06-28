@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 export default function Sidebar() {
   return (
-    <div className="fixed left-16 top-1/2 -translate-y-1/2 bg-[#05131E] text-white w-16 flex flex-col items-start justify-between py-6 px-5 rounded-3xl hover:w-3xs duration-700 ease-in-out overflow-hidden group">
+    <div className="hidden lg:fixed left-16 top-1/2 -translate-y-1/2 bg-[#05131E] text-white w-16 lg:flex flex-col items-start justify-between py-6 px-5 rounded-3xl hover:w-3xs duration-700 ease-in-out overflow-hidden group">
       <div className="mb-10">
         <span className="text-[#7ED8BF]  -ml-2 text-lg font-mono font-bold group-hover:hidden">
           {"<R/>"}
@@ -55,6 +55,12 @@ export default function Sidebar() {
       <div className="mt-50 flex">
         <FontAwesomeIcon icon={faEarthAmericas} size="lg" />
         <p className="hidden group-hover:block ml-2  rounded-lg whitespace-nowrap cursor-pointer " >Trocar Idioma</p>
+      </div>
+
+
+      {/* NavBar Mobile :) */}
+      <div >
+
       </div>
     </div>
   );

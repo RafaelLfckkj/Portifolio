@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="absolute bottom-5 left-1/2 -translate-x-1/2">
-      <div className="p-3 max-w-156.75 bg-[#05131E] rounded-3xl flex items-center justify-between mx-auto self-end px-10 gap-5  ">
+      <div className="p-3 w-130 ml-25 md:m-0 lg:max-w-156.75 bg-[#05131E] rounded-3xl flex items-center justify-between mx-auto self-end gap-5 ">
         <div className="flex gap-5">
           <Link href="https://github.com/RafaelLfckkj">
             <FontAwesomeIcon
@@ -30,7 +30,7 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          <p className="text-center text-sm py-2">
+          <p className="text-center text-sm py-2 md:w-70">
             Desenvolvido por Rafael Oliveira © 2026
           </p>
         </div>

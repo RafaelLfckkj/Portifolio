@@ -89,7 +89,7 @@ export default function Contato() {
           <h1>MENSAGEM</h1>
         </div>
 
-        <div className="flex justify-center items-center gap-14 mt-16">
+        <div className="lg:flex justify-center items-center gap-14 mt-16 md:grid">
           {/* Formulario */}
           <div>
             <form className="grid ">
@@ -106,7 +106,7 @@ export default function Contato() {
                 className="bg-[#222630] w-131 h-52.25 px-5 py-5 rounded-xl border border-white resize-none outline-none"
               />
 
-              <button className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8">
+              <button className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 ">
                 <p>Enviar</p>
               </button>
             </form>

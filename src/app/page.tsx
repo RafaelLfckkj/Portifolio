@@ -33,7 +33,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto h-screen flex items-center justify-between px-20">
+    <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center">
       {/* textos */}
       <div className="max-w-md">
         <div className="text-sm/8 ">
