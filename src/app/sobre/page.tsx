@@ -125,7 +125,7 @@ export default function Sobre() {
           <div className="grid grid-cols-3 justify-center items-center gap-6">
             <CardCertificados
               titulo="Udemy"
-              habilidades="Java COMPLETO"
+              habilidades="Java POO COMPLETO do zero"
             />
             <CardCertificados
               titulo="Udemy"
@@ -137,11 +137,11 @@ export default function Sobre() {
             />
             <CardCertificados
               titulo="Udemy"
-              habilidades="Next.js COMPLETO"
+              habilidades="Next.js COMPLETO do zero"
             />
             <CardCertificados
               titulo="Udmey"
-              habilidades="Angular 19 COMPLETO"
+              habilidades="Angular 19 COMPLETO do zero"
             />
             <CardCertificados
               titulo="Udemy"

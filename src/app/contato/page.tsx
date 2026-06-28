@@ -1,8 +1,7 @@
-"use client" // necessário aqui agora, por causa do useState
+"use client"; // necessário aqui agora, por causa do useState
 
-import { useState } from "react"
-import ModalCurriculo from "../components/modalCurriculo"
-
+import { useState } from "react";
+import ModalCurriculo from "../components/modalCurriculo";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -14,7 +13,6 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-
 import Link from "next/link";
 
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -22,8 +20,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Botao from "../components/botao";
 
 export default function Contato() {
-
-    const [modalAberto, setModalAberto] = useState(false)
+  const [modalAberto, setModalAberto] = useState(false);
 
   return (
     <div className="mb-30">
@@ -73,8 +70,7 @@ export default function Contato() {
         {/* Botões */}
         <div className="flex gap-16 justify-center items-center">
           <div onClick={() => setModalAberto(true)}>
-
-          <Botao texto="Baixar Curriculo" icone={faDownload} />
+            <Botao texto="Baixar Curriculo" icone={faDownload} />
           </div>
 
           <Link href="https://wa.me/5511948751574">
@@ -92,9 +88,15 @@ export default function Contato() {
         <div className="lg:flex justify-center items-center gap-14 mt-16 md:grid">
           {/* Formulario */}
           <div>
-            <form className="grid ">
+            <form
+              action="https://formspree.io/f/mwvdbwjr"
+              method="POST"
+              className="grid "
+            >
               <label className="font-bold">Email:</label>
               <input
+                name="email"
+                required
                 type="email"
                 placeholder="Digite Seu Email...."
                 className="bg-[#222630] w-131 p-2 pr-12 text-left rounded-md border border-white mb-10"
@@ -102,11 +104,16 @@ export default function Contato() {
 
               <label className="font-bold">Mensagem: </label>
               <textarea
+                name="message"
+                required
                 placeholder="Digite sua mensagem..."
                 className="bg-[#222630] w-131 h-52.25 px-5 py-5 rounded-xl border border-white resize-none outline-none"
               />
 
-              <button className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 ">
+              <button
+                type="submit"
+                className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 "
+              >
                 <p>Enviar</p>
               </button>
             </form>
@@ -179,7 +186,10 @@ export default function Contato() {
           </div>
         </div>
       </div>
-      <ModalCurriculo isOpen={modalAberto} onClose={() => setModalAberto(false)} />
+      <ModalCurriculo
+        isOpen={modalAberto}
+        onClose={() => setModalAberto(false)}
+      />
     </div>
   );
 }
