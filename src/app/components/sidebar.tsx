@@ -10,10 +10,10 @@ import {
   faUser,
   faLightbulb,
   faEnvelope,
-  faEarthAmericas,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Sidebar() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -25,7 +25,7 @@ export default function Sidebar() {
         <div className="mb-10">
           <span className="text-[#7ED8BF]  -ml-2 text-lg font-mono font-bold group-hover:hidden">
             {"<R/>"}
-          </span> 
+          </span>
 
           <span className="hidden group-hover:block text-[#7ED8BF] text-lg font-mono font-bold whitespace-nowrap">
             {"<Rafael/>"}
@@ -35,37 +35,56 @@ export default function Sidebar() {
           <ul className="grid gap-10 ">
             <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
               <FontAwesomeIcon icon={faHouse} size="lg" />
-              <Link className="hidden group-hover:block ml-2 hover:underline duration-100" href="/">
+              <Link
+                className="hidden group-hover:block ml-2 hover:underline duration-100"
+                href="/"
+              >
                 Home
               </Link>
             </li>
             <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
               <FontAwesomeIcon icon={faUser} size="lg" />
-              <Link className="hidden group-hover:block ml-2 whitespace-nowrap hover:underline duration-100" href="/sobre">
+              <Link
+                className="hidden group-hover:block ml-2 whitespace-nowrap hover:underline duration-100"
+                href="/sobre"
+              >
                 Sobre Mim
               </Link>
             </li>
             <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
               <FontAwesomeIcon icon={faLightbulb} size="lg" />
-              <Link className="hidden group-hover:block ml-2 hover:underline duration-100" href="/projetos">
+              <Link
+                className="hidden group-hover:block ml-2 hover:underline duration-100"
+                href="/projetos"
+              >
                 Projetos
               </Link>
             </li>
             <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
               <FontAwesomeIcon icon={faEnvelope} size="lg" />
-              <Link className="hidden group-hover:block ml-2 hover:underline duration-100" href="/contato">
+              <Link
+                className="hidden group-hover:block ml-2 hover:underline duration-100"
+                href="/contato"
+              >
                 Contato
               </Link>
             </li>
           </ul>
         </div>
         <div className="mt-50 flex">
-          <FontAwesomeIcon icon={faEarthAmericas} size="lg" />
-          <p className="hidden group-hover:block ml-2  rounded-lg whitespace-nowrap cursor-pointer " >Trocar Idioma</p>
+          <FontAwesomeIcon icon={faCode} size="lg" />
+              <Link
+                className="hidden group-hover:block ml-2 hover:underline duration-100 "
+                href="https://github.com/RafaelLfckkj/Portifolio"
+              >
+                Código
+              </Link>
+          {/* <FontAwesomeIcon icon={faEarthAmericas} size="lg" />
+          <p className="hidden group-hover:block ml-2  rounded-lg whitespace-nowrap " >Trocar Idioma</p> */}
+          {/* Vai ficar pro futuro mesmo - por enquanto vai dar muito BO */}
         </div>
       </div>
 
-      {/* Barra superior Mobile + Tablet */}
       <div className="lg:hidden fixed top-0 left-0 w-full bg-[#05131E] text-white flex items-center justify-between px-5 py-4 z-40">
         <button onClick={() => setMenuAberto(true)} className="cursor-pointer">
           <FontAwesomeIcon icon={faBars} size="lg" />
@@ -76,7 +95,6 @@ export default function Sidebar() {
         </span>
       </div>
 
-      {/* Overlay escurecido */}
       {menuAberto && (
         <div
           className="xl:hidden fixed inset-0 bg-black/60 z-40"
@@ -84,7 +102,6 @@ export default function Sidebar() {
         />
       )}
 
-      {/* Drawer lateral Mobile + Tablet */}
       <div
         className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-[#1C2230] text-white z-50 flex flex-col py-6 px-6 duration-300 ease-in-out ${
           menuAberto ? "translate-x-0" : "-translate-x-full"
