@@ -64,19 +64,19 @@ export default function Projetos() {
             habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
           />
           <CardProjeto
-            titulo="Portifolio"
-            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
-            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+            titulo="MemoryBotApp"
+            texto="Aplicativo do meu projeto de TCC realizado no Terceiro ano Ensino médio"
+            habilidades={["ReactNative", "TailwindCSS", "TypeScript", "Expo go", "Mobile"]}
           />
           <CardProjeto
-            titulo="Portifolio"
-            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
-            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+            titulo="Crud"
+            texto="CRUD de agendamentos feito em Java com Spring Boot."
+            habilidades={["Java", "Spring Boot", "API REST", "Back-end"]}
           />
           <CardProjeto
-            titulo="Portifolio"
-            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
-            habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+            titulo="Gerador de Certificados"
+            texto="Gerador de certificados em PNG a partir de um formulário."
+            habilidades={["Angular", "TailwindCSS", "TypeScript", "Front-End"]}
           />
         </div>
       </div>

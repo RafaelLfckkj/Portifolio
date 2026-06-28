@@ -155,6 +155,16 @@ export default function Sidebar() {
               Contato
             </Link>
           </li>
+          <li className="p-3 rounded-2xl bg-[#1C2D3A]">
+            <Link
+              href="https://github.com/RafaelLfckkj/Portifolio"
+              onClick={() => setMenuAberto(false)}
+              className="font-bold flex items-center gap-3"
+            >
+              <FontAwesomeIcon icon={faCode} />
+              Codigo
+            </Link>
+          </li>
         </ul>
       </div>
     </>
