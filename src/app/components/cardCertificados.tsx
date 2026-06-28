@@ -11,7 +11,7 @@ export default function CardCertificados({
     <div>
       <div className="bg-[#222A3D] w-70 p-4 rounded-xl pr-23">
         <h1 className="text-[#7ED8BF] font-bold text-lg w-60">{titulo}</h1>
-        <p className="text-[#9B9C9C] text-sm font-bold w-60">{habilidades}</p>
+        <p className="text-[#9B9C9C] text-sm font-bold w-80">{habilidades}</p>
       </div>
     </div>
   );

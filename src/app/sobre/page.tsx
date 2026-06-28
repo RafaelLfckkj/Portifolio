@@ -136,16 +136,28 @@ export default function Sobre() {
               habilidades="BootCamp - em andamento"
             />
             <CardCertificados
-              titulo="Alura"
-              habilidades="HTML, CSS, JavaScript  "
+              titulo="Udemy"
+              habilidades="Next.js COMPLETO"
             />
             <CardCertificados
-              titulo="Alura"
-              habilidades="HTML, CSS, JavaScript  "
+              titulo="Udmey"
+              habilidades="Angular 19 COMPLETO"
             />
             <CardCertificados
-              titulo="Alura"
-              habilidades="HTML, CSS, JavaScript  "
+              titulo="Udemy"
+              habilidades="HTML, CSS, JavaScript"
+            />
+            <CardCertificados
+              titulo="Rocketseat"
+              habilidades="MiniCurso de Java"
+            />
+            <CardCertificados
+              titulo="Rocketseat"
+              habilidades="Next.js App Router e Testes"
+            />
+            <CardCertificados
+              titulo="Rocketseat"
+              habilidades="Angular Curso Introdutorio"
             />
           </div>
         </div>
