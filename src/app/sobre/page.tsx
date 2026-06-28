@@ -171,7 +171,7 @@ export default function Sobre() {
           <GitHubCalendar
             username="rafaellfckkj"
             colorScheme="light"
-            className="mt-10 mb-25"
+            className="mt-10 mb-25 ml-10"
           />
         </div>
       </div>
