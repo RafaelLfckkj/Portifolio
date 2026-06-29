@@ -1,9 +1,16 @@
+"use client";
+
+import { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 import CardProjeto from "../components/cardProjeto";
 
 export default function Projetos() {
+  const [busca, setBusca] = useState("");
+  const [categoria, setCategoria] = useState("Todos");
+
   return (
     <div className="mb-50">
       {/* Textos */}
@@ -23,6 +30,8 @@ export default function Projetos() {
               type="text"
               placeholder="Pesquisar Projeto..."
               className="w-full bg-[#222630] border border-gray-400 rounded-xl py-3  pl-4  pr-14 text-white placeholder:text-gray-400 outline-none "
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
             />
 
             <div className="absolute right-3  top-1/2  -translate-y-1/2 w-10 h-10 bg-[#7ED8BF] rounded-full flex items-center justify-center cursor-pointer">
@@ -35,12 +44,16 @@ export default function Projetos() {
         </div>
 
         <div className="">
-          <select className="border bg-[#222630] p-4 rounded-lg font-bold">
-            <option value="br">Todos</option>
-            <option value="br">Front-End</option>
-            <option value="us">Back-End</option>
-            <option value="pt">Full-Stack</option>
-            <option value="pt">Mobile</option>
+          <select
+            className="border bg-[#222630] p-4 rounded-lg font-bold"
+            value={categoria}
+            onChange={(e) => setCategoria(e.target.value)}
+          >
+            <option value="Todos">Todos</option>
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Full-Stack">Full-Stack</option>
+            <option value="Mobile">Mobile</option>
           </select>
         </div>
       </div>
@@ -64,6 +77,9 @@ export default function Projetos() {
             repositorio="https://github.com/RafaelLfckkj/Portifolio"
             visualizar="https://github.com/RafaelLfckkj/Portifolio"
             imagem="/PortifolioPrint.png"
+            categoriaFiltro="Front-End"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
           />
           <CardProjeto
             titulo="MemoryBotApp"
@@ -78,6 +94,9 @@ export default function Projetos() {
             repositorio="https://github.com/RafaelLfckkj/MemoryBotApp"
             visualizar="https://github.com/RafaelLfckkj/MemoryBotApp"
             imagem="/MemoryBotAppPrint.png"
+            categoriaFiltro="Mobile"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
           />
           <CardProjeto
             titulo="Agendador de Horarios"
@@ -86,6 +105,9 @@ export default function Projetos() {
             repositorio="https://github.com/RafaelLfckkj/CRUD"
             visualizar="https://github.com/RafaelLfckkj/CRUD"
             imagem="/AgendadorHorarioPrint.png"
+            categoriaFiltro="Back-End"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
           />
           <CardProjeto
             titulo="Gerador de Certificados"
@@ -94,9 +116,14 @@ export default function Projetos() {
             repositorio="https://github.com/RafaelLfckkj/GeradorDeCertificados"
             visualizar="https://gerador-de-certificados-blush.vercel.app"
             imagem="/GeradorCertificados.png"
+            categoriaFiltro="Front-End"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
           />
         </div>
       </div>
+
+      
     </div>
   );
 }

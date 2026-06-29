@@ -5,6 +5,9 @@ interface CardProjetoProps {
   repositorio: string;
   visualizar: string;
   imagem: string;
+  categoriaFiltro: string;
+  filtroAtivo: string;
+  buscaAtiva: string;
 }
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +25,18 @@ export default function CardProjeto({
   repositorio,
   visualizar,
   imagem,
+  categoriaFiltro,
+  filtroAtivo,
+  buscaAtiva,
 }: CardProjetoProps) {
+  const combinaCategoria =
+    filtroAtivo === "Todos" || filtroAtivo === categoriaFiltro;
+  const combinaBusca = titulo.toLowerCase().includes(buscaAtiva.toLowerCase());
+
+  if (!combinaCategoria || !combinaBusca) {
+    return null;
+  }
+
   return (
     <div className="w-full max-w-87.5 p-6 h-120 rounded-3xl border border-white bg-[#222A3D]">
       <p className="text-center font-bold mb-3">{titulo}</p>
@@ -54,7 +68,7 @@ export default function CardProjeto({
           alt={`Imagem do projeto ${titulo}`}
           width={400}
           height={400}
-          className="w-full h-full object-cover rounded-md border border-white" 
+          className="w-full h-full object-cover rounded-md border border-white"
         />
       </div>
 
