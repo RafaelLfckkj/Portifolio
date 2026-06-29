@@ -63,6 +63,7 @@ export default function Projetos() {
             habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
             repositorio="https://github.com/RafaelLfckkj/Portifolio"
             visualizar="https://github.com/RafaelLfckkj/Portifolio"
+            imagem="/PortifolioPrint.png"
           />
           <CardProjeto
             titulo="MemoryBotApp"
@@ -76,6 +77,7 @@ export default function Projetos() {
             ]}
             repositorio="https://github.com/RafaelLfckkj/MemoryBotApp"
             visualizar="https://github.com/RafaelLfckkj/MemoryBotApp"
+            imagem="/MemoryBotAppPrint.png"
           />
           <CardProjeto
             titulo="Agendador de Horarios"
@@ -83,6 +85,7 @@ export default function Projetos() {
             habilidades={["Java", "Spring Boot", "API REST", "Back-end"]}
             repositorio="https://github.com/RafaelLfckkj/CRUD"
             visualizar="https://github.com/RafaelLfckkj/CRUD"
+            imagem="/AgendadorHorarioPrint.png"
           />
           <CardProjeto
             titulo="Gerador de Certificados"
@@ -90,6 +93,7 @@ export default function Projetos() {
             habilidades={["Angular", "TailwindCSS", "TypeScript", "Front-End"]}
             repositorio="https://github.com/RafaelLfckkj/GeradorDeCertificados"
             visualizar="https://gerador-de-certificados-blush.vercel.app"
+            imagem="/GeradorCertificados.png"
           />
         </div>
       </div>

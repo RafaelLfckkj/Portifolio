@@ -4,9 +4,14 @@ interface CardProjetoProps {
   habilidades: string[];
   repositorio: string;
   visualizar: string;
+  imagem: string;
 }
 
-// import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+
+import Image from "next/image";
 
 import Link from "next/link";
 
@@ -16,6 +21,7 @@ export default function CardProjeto({
   habilidades,
   repositorio,
   visualizar,
+  imagem,
 }: CardProjetoProps) {
   return (
     <div className="w-full max-w-87.5 p-6 h-120 rounded-3xl border border-white bg-[#222A3D]">
@@ -42,13 +48,31 @@ export default function CardProjeto({
         ))}
       </div>
 
-      <div className="bg-white mt-7 h-43.5 rounded-2xl">
-        <p> </p>
+      <div className=" mt-7 h-43.5 rounded-2xl">
+        <Image
+          src={imagem}
+          alt={`Imagem do projeto ${titulo}`}
+          width={400}
+          height={400}
+          className="w-full h-full object-cover rounded-md border border-white" 
+        />
       </div>
 
       <div className="flex justify-center gap-7 mt-5 font-bold">
-          <Link href={repositorio} className="bg-[#66b09b] w-fit p-1 rounded hover:bg-[#538e7d] duration-150">Repositório</Link>
-          <Link href={visualizar} className="bg-[#66b09b] w-fit p-1 px-2 rounded hover:bg-[#538e7d] duration-150">Visualizar</Link>
+        <Link
+          href={repositorio}
+          className="bg-[#66b09b] w-fit p-1 rounded hover:bg-[#538e7d] duration-150"
+        >
+          Repositório
+          <FontAwesomeIcon icon={faGithub} className="ml-2" />
+        </Link>
+        <Link
+          href={visualizar}
+          className="bg-[#66b09b] w-fit p-1 px-2 rounded hover:bg-[#538e7d] duration-150 "
+        >
+          Visualizar
+          <FontAwesomeIcon icon={faPlay} className="ml-2" />
+        </Link>
       </div>
     </div>
   );
