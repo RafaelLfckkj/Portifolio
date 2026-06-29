@@ -85,7 +85,7 @@ export default function Contato() {
           <h1>MENSAGEM</h1>
         </div>
 
-        <div className="lg:flex justify-center items-center gap-14 mt-16 md:grid">
+        <div className="xl:flex justify-center items-center gap-14 mt-16 md:grid ">
           {/* Formulario */}
           <div>
             <form

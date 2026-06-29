@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center">
       {/* textos */}
-      <div className="max-w-md">
+      <div className="max-w-md xl:m-0 lg:ml-20">
         <div className="text-sm/8 ">
           <h1 className="text-[40px] font-bold">Olá, eu me chamo</h1>
           <h2 className="text-[35px] font-bold text-[#7ED8BF]">

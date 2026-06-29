@@ -31,10 +31,12 @@ import CardCertificados from "../components/cardCertificados";
 export default function Sobre() {
   return (
     <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 ">
+      {/* ------------------ */}
+
       {/* textos sobre mim */}
-      <div className="flex justify-center items-center w-240 gap-32">
+      <div className="flex justify-center items-center xl:w-240 xl:gap-32 lg:w-230 ">
         {/* titulos */}
-        <div className="w-100">
+        <div className="w-100 xl:m-0 lg:ml-22">
           <h1 className="text-5xl mb-6 text-[#7ED8BF]">Quem sou eu?</h1>
 
           <h2 className="text-2xl leading-tight">
@@ -47,7 +49,7 @@ export default function Sobre() {
 
         {/* textos */}
         <div>
-          <p className="w-125 text-sm leading-relaxed text-justify">
+          <p className="xl:w-125 text-sm leading-relaxed text-justify lg:w-90">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
             <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
             <span className="text-[#7ED8BF]">UNASP</span>. Estou me
@@ -76,10 +78,12 @@ export default function Sobre() {
         </div>
       </div>
 
+      {/* ------------------ */}
+
       <div className="mt-10">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        <div className="flex justify-center items-center gap-6 mt-10">
+        <div className="flex justify-center items-center xl:gap-6 lg:gap-4 mt-10">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -117,20 +121,17 @@ export default function Sobre() {
           />
         </div>
 
-        <div className="mt-10 bg-[#061825] rounded-2xl p-6">
+        <div className="mt-10 bg-[#061825] rounded-2xl w-fit p-6 xl:ml-0 lg:ml-35">
           <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
             Certificados
           </h1>
 
-          <div className="grid grid-cols-3 justify-center items-center gap-6">
+          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-6">
             <CardCertificados
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
             />
-            <CardCertificados
-              titulo="Udemy"
-              habilidades="Banco de Dados SQL"
-            />
+            <CardCertificados titulo="Udemy" habilidades="Banco de Dados SQL" />
             <CardCertificados
               titulo="Santander Academy"
               habilidades="BootCamp - em andamento"
@@ -168,11 +169,13 @@ export default function Sobre() {
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
 
-          <GitHubCalendar
-            username="rafaellfckkj"
-            colorScheme="light"
-            className="mt-10 mb-25 ml-10"
-          />
+          <div className="mt-10 mb-25 ml-10 lg:scale-80 xl:scale-110 scale-75 lg:ml-40 xl:-ml-10 origin-left">
+            <GitHubCalendar
+              username="rafaellfckkj"
+              colorScheme="light"
+              className="mt-10 mb-25 ml-10 "
+            />
+          </div>
         </div>
       </div>
     </div>

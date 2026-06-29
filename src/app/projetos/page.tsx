@@ -23,7 +23,7 @@ export default function Projetos() {
       </div>
 
       {/* Filtração dos projetos */}
-      <div className="flex gap-100 justify-center items-center mt-13">
+      <div className="flex xl:gap-100 justify-center items-center mt-13">
         <div className="mr-50 w-82.5">
           <div className="relative">
             <input
@@ -59,7 +59,7 @@ export default function Projetos() {
       </div>
 
       {/* Card dos Projetos  */}
-      <div className="max-w-275 mx-auto mt-16">
+      <div className="max-w-275 xl:max-w-275 lg:max-w-180 mx-auto mt-16">
         <div
           className="
       grid
