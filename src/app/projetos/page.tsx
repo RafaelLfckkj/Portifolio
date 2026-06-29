@@ -45,8 +45,7 @@ export default function Projetos() {
         </div>
       </div>
 
-
-    {/* Card dos Projetos  */}
+      {/* Card dos Projetos  */}
       <div className="max-w-275 mx-auto mt-16">
         <div
           className="
@@ -62,21 +61,35 @@ export default function Projetos() {
             titulo="Portifolio"
             texto="Portfólio pessoal para apresentar meus projetos e habilidades"
             habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
+            repositorio="https://github.com/RafaelLfckkj/Portifolio"
+            visualizar="https://github.com/RafaelLfckkj/Portifolio"
           />
           <CardProjeto
             titulo="MemoryBotApp"
             texto="Aplicativo do meu projeto de TCC realizado no Terceiro ano Ensino médio"
-            habilidades={["ReactNative", "TailwindCSS", "TypeScript", "Expo go", "Mobile"]}
+            habilidades={[
+              "ReactNative",
+              "TailwindCSS",
+              "TypeScript",
+              "Expo go",
+              "Mobile",
+            ]}
+            repositorio="https://github.com/RafaelLfckkj/MemoryBotApp"
+            visualizar="https://github.com/RafaelLfckkj/MemoryBotApp"
           />
           <CardProjeto
-            titulo="Crud"
+            titulo="Agendador de Horarios"
             texto="CRUD de agendamentos feito em Java com Spring Boot."
             habilidades={["Java", "Spring Boot", "API REST", "Back-end"]}
+            repositorio="https://github.com/RafaelLfckkj/CRUD"
+            visualizar="https://github.com/RafaelLfckkj/CRUD"
           />
           <CardProjeto
             titulo="Gerador de Certificados"
             texto="Gerador de certificados em PNG a partir de um formulário."
             habilidades={["Angular", "TailwindCSS", "TypeScript", "Front-End"]}
+            repositorio="https://github.com/RafaelLfckkj/GeradorDeCertificados"
+            visualizar="https://gerador-de-certificados-blush.vercel.app"
           />
         </div>
       </div>
