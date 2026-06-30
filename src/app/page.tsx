@@ -33,9 +33,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center">
+    <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center lg:mb-0 md:mb-70">
       {/* textos */}
-      <div className="max-w-md xl:m-0 lg:ml-20">
+      <div className="max-w-md xl:m-0 lg:ml-20 md:mt-30 md:text-center lg:text-left">
         <div className="text-sm/8 ">
           <h1 className="text-[40px] font-bold">Olá, eu me chamo</h1>
           <h2 className="text-[35px] font-bold text-[#7ED8BF]">
@@ -43,13 +43,13 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="text-3xl md:text-3xl font-medium text-[#7ED8BF] flex items-center h-10 mt-2">
+        <div className="text-3xl md:text-3xl font-medium text-[#7ED8BF] flex items-center h-10 mt-2 md:text-center lg:text-left">
           <span ref={elementoDigitando}></span>
           <span className="inline-block w-0.5 h-[1.1em] bg-[#7ED8BF] ml-1 animate-[piscar_0.75s_step-end_infinite]"></span>
         </div>
 
         {/* Botões */}
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 md:justify-center md:items-center lg:justify-start lg:items-start lg:m-0 md:mb-10">
           <Link
             className="mt-6 px-6 py-2 bg-[#62a894] text-white rounded-3xl hover:bg-[#3b7d69] transition-colors duration-300 shadow-xl font-bold"
             href="/projetos"

@@ -25,7 +25,7 @@ export default function Contato() {
   return (
     <div className="mb-30">
       {/* Textos e etc */}
-      <div className="items-center justify-center text-center mb-50">
+      <div className="items-center justify-center text-center mb-50 md:mt-30 ">
         <h1 className="text-5xl text-[#7ED8BF] font-bold mt-10 mb-10">
           ONDE VOCÊ PODE ME <br /> ENCONTRAR?
         </h1>

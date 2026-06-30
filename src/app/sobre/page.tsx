@@ -49,7 +49,7 @@ export default function Sobre() {
 
         {/* textos */}
         <div>
-          <p className="xl:w-125 text-sm leading-relaxed text-justify lg:w-90">
+          <p className="xl:w-125 text-sm leading-relaxed text-justify lg:w-90 md:w-80">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
             <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
             <span className="text-[#7ED8BF]">UNASP</span>. Estou me
@@ -83,7 +83,7 @@ export default function Sobre() {
       <div className="mt-10">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        <div className="flex justify-center items-center xl:gap-6 lg:gap-4 mt-10">
+        <div className="lg:flex md:grid  md:gap-5 justify-center items-center xl:gap-6 lg:gap-4 mt-10">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -121,12 +121,12 @@ export default function Sobre() {
           />
         </div>
 
-        <div className="mt-10 bg-[#061825] rounded-2xl w-fit p-6 xl:ml-0 lg:ml-35">
-          <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
+        <div className="mt-10 bg-[#061825] rounded-2xl w-fit p-6 lg:p-6 xl:ml-0 lg:ml-35 md:p-4">
+          <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5 lg:m-0 md:ml-20">
             Certificados
           </h1>
-
-          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-6">
+ 
+          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-6 md:gap-2 md:ml-35">
             <CardCertificados
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
@@ -169,7 +169,7 @@ export default function Sobre() {
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
 
-          <div className="mt-10 mb-25 ml-10 lg:scale-80 xl:scale-110 scale-75 lg:ml-40 xl:-ml-10 origin-left">
+          <div className="mt-10 mb-25 ml-10 lg:scale-80 xl:scale-110 scale-75 lg:ml-40 xl:-ml-10 origin-left md:ml-40">
             <GitHubCalendar
               username="rafaellfckkj"
               colorScheme="light"
