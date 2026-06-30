@@ -14,22 +14,22 @@ export default function Projetos() {
   return (
     <div className="mb-50">
       {/* Textos */}
-      <div className="text-center mt-20">
-        <h1 className="text-[#7ED8BF] text-5xl font-bold">Meus Projetos</h1>
+      <div className="text-center sm:m-0 sm:mt-20 mt-25">
+        <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0 ml-35">Meus Projetos</h1>
 
-        <h2 className="text-2xl font-bold">
+        <h2 className="text-2xl font-bold sm:m-0 ml-17 mt-5 w-full">
           Aqui estão alguns dos meus projetos !
         </h2>
       </div>
 
       {/* Filtração dos projetos */}
-      <div className="flex xl:gap-100 justify-center items-center mt-13">
-        <div className="mr-50 w-82.5">
+      <div className="sm:flex  xl:gap-100 justify-center items-center mt-13">
+        <div className="sm:mr-50 w-82.5 ml-15">
           <div className="relative">
             <input
               type="text"
               placeholder="Pesquisar Projeto..."
-              className="w-full bg-[#222630] border border-gray-400 rounded-xl py-3  pl-4  pr-14 text-white placeholder:text-gray-400 outline-none "
+              className="w-full bg-[#222630] border border-gray-400 rounded-xl py-3  pl-4  pr-14 text-white placeholder:text-gray-400 outline-none sm:m-0"
               value={busca}
               onChange={(e) => setBusca(e.target.value)}
             />
@@ -43,7 +43,7 @@ export default function Projetos() {
           </div>
         </div>
 
-        <div className="">
+        <div className="sm:m-0 ml-40 mt-5">
           <select
             className="border bg-[#222630] p-4 rounded-lg font-bold"
             value={categoria}

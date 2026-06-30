@@ -83,7 +83,7 @@ export default function Sobre() {
       <div className="mt-10">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        <div className="lg:flex md:grid  md:gap-5 justify-center items-center xl:gap-6 lg:gap-4 mt-10">
+        <div className="lg:flex md:grid md:gap-5 justify-center items-center xl:gap-6 lg:gap-4 mt-10 sm:grid-cols-Z">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -126,7 +126,7 @@ export default function Sobre() {
             Certificados
           </h1>
  
-          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-6 md:gap-2 md:ml-35">
+          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 lg:ml-0 lg:mt-5 md:ml-35">
             <CardCertificados
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
