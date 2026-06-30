@@ -23,7 +23,7 @@ export default function Contato() {
   const [modalAberto, setModalAberto] = useState(false);
 
   return (
-    <div className="mb-30">
+    <div className="mb-30 sm:w-full w-137.5 sm:mt-0 mt-30">
       {/* Textos e etc */}
       <div className="items-center justify-center text-center mb-50 md:mt-30 ">
         <h1 className="text-5xl text-[#7ED8BF] font-bold mt-10 mb-10">
@@ -112,7 +112,7 @@ export default function Contato() {
 
               <button
                 type="submit"
-                className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 "
+                className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 sm:mb-0 mb-10"
               >
                 <p>Enviar</p>
               </button>

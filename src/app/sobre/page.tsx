@@ -30,13 +30,13 @@ import CardCertificados from "../components/cardCertificados";
 
 export default function Sobre() {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 ">
+    <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 w-full">
       {/* ------------------ */}
 
       {/* textos sobre mim */}
-      <div className="flex justify-center items-center xl:w-240 xl:gap-32 lg:w-230 ">
+      <div className="sm:flex justify-center items-center xl:w-240 xl:gap-32 lg:w-230 grid sm:w-full w-137.5 sm:text-left text-center sm:ml-0 ml-150">
         {/* titulos */}
-        <div className="w-100 xl:m-0 lg:ml-22">
+        <div className="w-100 xl:m-0 lg:ml-22 ml-20 sm:mb-0 mb-3">
           <h1 className="text-5xl mb-6 text-[#7ED8BF]">Quem sou eu?</h1>
 
           <h2 className="text-2xl leading-tight">
@@ -49,7 +49,7 @@ export default function Sobre() {
 
         {/* textos */}
         <div>
-          <p className="xl:w-125 text-sm leading-relaxed text-justify lg:w-90 md:w-80">
+          <p className="xl:w-125 text-sm leading-relaxed sm:text-justify lg:w-90 md:w-80 text-center ">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
             <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
             <span className="text-[#7ED8BF]">UNASP</span>. Estou me
@@ -80,10 +80,10 @@ export default function Sobre() {
 
       {/* ------------------ */}
 
-      <div className="mt-10">
+      <div className="mt-10 sm:w-fit w-full sm:ml-0 ml-150">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        <div className="lg:flex md:grid md:gap-5 justify-center items-center xl:gap-6 lg:gap-4 mt-10 sm:grid-cols-Z">
+        <div className="lg:flex md:grid md:gap-5 justify-center items-center xl:gap-6 lg:gap-4 mt-10 grid gap-3">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -126,7 +126,7 @@ export default function Sobre() {
             Certificados
           </h1>
  
-          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 lg:ml-0 lg:mt-5 md:ml-35">
+          <div className="grid sm:grid-cols-3 grid-cols-1 gap-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 lg:ml-0 lg:mt-5 md:ml-35">
             <CardCertificados
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
@@ -163,13 +163,13 @@ export default function Sobre() {
           </div>
         </div>
 
-        <div className="mt-25">
-          <h1 className="text-center font-bold text-6xl">
+        <div className="mt-25 w-fit sm:ml-0 -ml-25">
+          <h1 className="text-center font-bold text-6xl sm:ml-0 -ml-60">
             Minhas <br />
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
 
-          <div className="mt-10 mb-25 ml-10 lg:scale-80 xl:scale-110 scale-75 lg:ml-40 xl:-ml-10 origin-left md:ml-40">
+          <div className="mt-10 mb-25 -ml-20 lg:scale-80 xl:scale-110 scale-75 lg:ml-40 xl:-ml-10 origin-left md:ml-40">
             <GitHubCalendar
               username="rafaellfckkj"
               colorScheme="light"

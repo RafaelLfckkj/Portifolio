@@ -12,19 +12,19 @@ export default function Projetos() {
   const [categoria, setCategoria] = useState("Todos");
 
   return (
-    <div className="mb-50">
+    <div className="mb-50 w-125 sm:w-full ">
       {/* Textos */}
       <div className="text-center sm:m-0 sm:mt-20 mt-25">
-        <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0 ml-35">Meus Projetos</h1>
+        <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0">Meus Projetos</h1>
 
-        <h2 className="text-2xl font-bold sm:m-0 ml-17 mt-5 w-full">
+        <h2 className="text-2xl font-bold sm:m-0 mt-5 w-full">
           Aqui estão alguns dos meus projetos !
         </h2>
       </div>
 
       {/* Filtração dos projetos */}
-      <div className="sm:flex  xl:gap-100 justify-center items-center mt-13">
-        <div className="sm:mr-50 w-82.5 ml-15">
+      <div className="sm:flex  xl:gap-100 justify-center items-center mt-13 grid">
+        <div className="sm:mr-50 w-82.5">
           <div className="relative">
             <input
               type="text"
@@ -43,7 +43,7 @@ export default function Projetos() {
           </div>
         </div>
 
-        <div className="sm:m-0 ml-40 mt-5">
+        <div className="sm:m-0 ml-25 mt-5">
           <select
             className="border bg-[#222630] p-4 rounded-lg font-bold"
             value={categoria}
@@ -59,7 +59,7 @@ export default function Projetos() {
       </div>
 
       {/* Card dos Projetos  */}
-      <div className="max-w-275 xl:max-w-275 lg:max-w-180 mx-auto mt-16">
+      <div className="sm:max-w-275 xl:max-w-275 lg:max-w-180  sm:mx-auto mt-16">
         <div
           className="
       grid
@@ -75,7 +75,7 @@ export default function Projetos() {
             texto="Portfólio pessoal para apresentar meus projetos e habilidades"
             habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
             repositorio="https://github.com/RafaelLfckkj/Portifolio"
-            visualizar="https://github.com/RafaelLfckkj/Portifolio"
+            visualizar="https://portifolio-flame-chi.vercel.app"
             imagem="/PortifolioPrint.png"
             categoriaFiltro="Front-End"
             filtroAtivo={categoria}

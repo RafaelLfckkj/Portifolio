@@ -38,9 +38,9 @@ export default function CardProjeto({
   }
 
   return (
-    <div className="sm:w-full sm:max-w-87.5 p-6 h-120 rounded-3xl border border-white bg-[#222A3D]">
+    <div className="w-full max-w-90 p-6 min-h-120 rounded-3xl border border-white bg-[#222A3D] mx-auto">
       <p className="text-center font-bold mb-3">{titulo}</p>
-      <p className="text-left w-78.25 mb-5">{texto}</p>
+      <p className="text-left mb-5">{texto}</p>
 
       <div className="grid grid-cols-3 flex-wrap gap-2">
         {habilidades.map((habilidade, index) => (
