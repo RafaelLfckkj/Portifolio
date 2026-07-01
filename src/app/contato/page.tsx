@@ -23,10 +23,10 @@ export default function Contato() {
   const [modalAberto, setModalAberto] = useState(false);
 
   return (
-    <div className="mb-30 sm:w-full w-137.5 sm:mt-0 mt-30">
+    <div className="mb-30 w-full sm:mt-0 mt-30">
       {/* Textos e etc */}
       <div className="items-center justify-center text-center mb-50 md:mt-30 ">
-        <h1 className="text-5xl text-[#7ED8BF] font-bold mt-10 mb-10">
+        <h1 className="sm:text-5xl text-4xl text-[#7ED8BF] font-bold mt-10 mb-10">
           ONDE VOCÊ PODE ME <br /> ENCONTRAR?
         </h1>
 
@@ -68,7 +68,7 @@ export default function Contato() {
         </div>
 
         {/* Botões */}
-        <div className="flex gap-16 justify-center items-center">
+        <div className="sm:flex gap-16 justify-center items-center grid ">
           <div onClick={() => setModalAberto(true)}>
             <Botao texto="Baixar Curriculo" icone={faDownload} />
           </div>
@@ -99,7 +99,7 @@ export default function Contato() {
                 required
                 type="email"
                 placeholder="Digite Seu Email...."
-                className="bg-[#222630] w-131 p-2 pr-12 text-left rounded-md border border-white mb-10"
+                className="bg-[#222630] sm:w-131  p-2 pr-12 text-left rounded-md border border-white mb-10"
               />
 
               <label className="font-bold">Mensagem: </label>
@@ -107,12 +107,12 @@ export default function Contato() {
                 name="message"
                 required
                 placeholder="Digite sua mensagem..."
-                className="bg-[#222630] w-131 h-52.25 px-5 py-5 rounded-xl border border-white resize-none outline-none"
+                className="bg-[#222630] sm:w-131  h-52.25 px-5 py-5 rounded-xl border border-white resize-none outline-none"
               />
 
               <button
                 type="submit"
-                className="flex bg-[#183153] p-3 w-fit   px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 sm:mb-0 mb-10"
+                className="flex bg-[#183153] p-3 w-fit  px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 sm:mb-0 mb-10"
               >
                 <p>Enviar</p>
               </button>
@@ -120,7 +120,7 @@ export default function Contato() {
           </div>
 
           {/* Terminal? */}
-          <div className="w-132.75 h-85 bg-[#011522] mb-10 rounded-3xl border border-[#1a1d2b] overflow-hidden shadow-2xl">
+          <div className="sm:w-132.75 h-85 bg-[#011522] mb-10 rounded-3xl border border-[#1a1d2b] overflow-hidden shadow-2xl">
             {/* Barra superior */}
             <div className="h-12 bg-[#090B13] flex items-center px-5 gap-3 border-b border-[#1a1d2b]">
               <div className="w-3 h-3 bg-red-500 rounded-full"></div>
