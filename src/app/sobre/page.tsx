@@ -36,7 +36,7 @@ export default function Sobre() {
       {/* textos sobre mim */}
       <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
-        <div className="w-100 xl:m-0 lg:ml-22">
+        <div className="w-full sm:w-100 xl:m-0 lg:ml-22">
           <h1 className="text-5xl mb-6 text-[#7ED8BF]">Quem sou eu?</h1>
 
           <h2 className="text-2xl leading-tight">
@@ -80,10 +80,16 @@ export default function Sobre() {
 
       {/* ------------------ */}
 
-      <div className="mt-10 w-full sm:w-fit ">
+      {/* CONTAINER PAI: agora é flex-col + items-center, então tudo dentro
+          dele (título, grid de skills, box de certificados, contribuições)
+          fica centralizado automaticamente */}
+      <div className="mt-10 w-full flex flex-col items-center">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        <div className="flex md:grid lg:flex gap-2 md:gap-5 justify-center sm:items-center xl:gap-6 lg:gap-4 mt-10 sm:grid-cols-1 md:grid-cols-3 grid-cols-4 ">
+        {/* GRID DE SKILLS: simplifiquei pra não misturar flex+grid,
+            e adicionei justify-items-center pra centralizar os cards
+            dentro de cada coluna/linha do grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 lg:gap-4 xl:gap-6 mt-10 justify-items-center">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -121,12 +127,14 @@ export default function Sobre() {
           />
         </div>
 
-        <div className="mt-10 bg-[#061825] rounded-2xl w-fit p-6 lg:p-6 xl:ml-0 lg:ml-35 md:p-4">
-          <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5 lg:m-0 md:ml-20">
+        {/* BOX DE CERTIFICADOS: mx-auto já não é mais necessário porque
+            o pai é flex items-center, mas deixei como reforço, não atrapalha */}
+        <div className="mt-10 bg-[#061825] rounded-2xl w-[90%] sm:w-fit mx-auto p-6 lg:p-6 md:p-4 justify-center items-center flex flex-col">
+          <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
             Certificados
           </h1>
- 
-          <div className="grid sm:grid-cols-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 lg:ml-0 lg:mt-5 md:ml-35 gap-2">
+
+          <div className="grid sm:grid-cols-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 gap-2 justify-items-center">
             <CardCertificados
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
@@ -163,20 +171,20 @@ export default function Sobre() {
           </div>
         </div>
 
-        <div className="mt-25 w-fit">
-          <h1 className="text-center font-bold text-6xl">
+        <div className="mt-25 w-full">
+          <h1 className="text-center font-bold text-4xl sm:text-5xl lg:text-6xl px-4">
             Minhas <br />
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
-
-          <div className="mt-10 mb-25 ml-10 lg:scale-80 xl:scale-110 scale-75 lg:ml-40 xl:-ml-10 origin-left md:ml-40">
-            <GitHubCalendar
+        </div>
+        <div className="scale-35 sm:scale-80 lg:scale-100 w-fit">
+          <GitHubCalendar
               username="rafaellfckkj"
               colorScheme="light"
               className="mt-10 mb-25 ml-10 "
             />
-          </div>
         </div>
+       x
       </div>
     </div>
   );
