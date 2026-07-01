@@ -33,9 +33,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center lg:mb-0 sm:mb-70 mb-25">
+    <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center lg:mb-0 sm:mb-70 mb-25 grid justify-center items-center">
       {/* textos */}
-      <div className="max-w-md xl:m-0 lg:ml-20 md:mt-30 mt-40 md:text-center lg:text-left text-center sm:ml-0">
+      <div className="max-w-md xl:m-0 lg:ml-20 md:mt-30 mt-20 md:text-center lg:text-left text-center sm:ml-0">
         <div className="text-sm/8 ">
           <h1 className="md:text-[40px] text-[30px] font-bold">Olá, eu me chamo</h1>
           <h2 className="md:text-[35px] text-[20px] font-bold text-[#7ED8BF]">
@@ -48,9 +48,9 @@ export default function Home() {
         </div>
 
         {/* Botões */}
-        <div className="sm:flex gap-4 md:justify-center md:items-center lg:justify-start lg:items-start lg:m-0 md:mb-10 grid mb-10">
+        <div className="sm:flex gap-4 md:justify-center md:items-center lg:justify-start lg:items-start lg:m-0 md:mb-10 grid mb-5 justify-center items-center">
           <Link
-            className="mt-6 px-6 py-2 bg-[#62a894] text-white rounded-3xl hover:bg-[#3b7d69] transition-colors duration-300 shadow-xl font-bold"
+            className="mt-6 px-6 py-2 bg-[#62a894] text-white rounded-3xl hover:bg-[#3b7d69] transition-colors duration-300 shadow-xl font-bold w-60 sm:w-50 text-center"
             href="/projetos"
           >
             Ver Projetos
@@ -58,7 +58,7 @@ export default function Home() {
           </Link>
 
           <Link
-            className="border rounded-3xl mt-6 px-6 py-2 border-[#7ED8BF] hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl font-bold"
+            className="border rounded-3xl sm:mt-6 px-6 py-2 border-[#7ED8BF] hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl font-bold w-60 sm:w-50 text-center"
             href="https://wa.me/5511948751574"
           >
             Fale Comigo
@@ -67,7 +67,7 @@ export default function Home() {
       </div>
 
       {/* Imagem */}
-      <div className=" transition-transform duration-500 hover:scale-105 sm:m-0">
+      <div className=" transition-transform duration-500 hover:scale-105 sm:m-0 w-70 justify-center items-center sm:w-100">
         <Image
           src="/Eu.png"
           alt="Foto de perfil do Rafael"
