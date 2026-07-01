@@ -37,9 +37,9 @@ export default function Sobre() {
       <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
         <div className="w-full sm:w-100 xl:m-0 lg:ml-22">
-          <h1 className="text-5xl mb-6 text-[#7ED8BF]">Quem sou eu?</h1>
+          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold">Quem sou eu?</h1>
 
-          <h2 className="text-2xl leading-tight">
+          <h2 className="text-2xl leading-tight sm:mb-0 mb-5">
             Técnico em T.I
             <span className="text-[#7ED8BF]"> Bacharelado</span> em Ciencia da
             Computação e{" "}
@@ -49,7 +49,7 @@ export default function Sobre() {
 
         {/* textos */}
         <div>
-          <p className="xl:w-125 text-sm leading-relaxed text-justify lg:w-90 md:w-80">
+          <p className="xl:w-125 sm:text-sm text-[10px] text-center leading-relaxed sm:text-justify lg:w-90 md:w-80">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
             <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
             <span className="text-[#7ED8BF]">UNASP</span>. Estou me
@@ -80,16 +80,11 @@ export default function Sobre() {
 
       {/* ------------------ */}
 
-      {/* CONTAINER PAI: agora é flex-col + items-center, então tudo dentro
-          dele (título, grid de skills, box de certificados, contribuições)
-          fica centralizado automaticamente */}
-      <div className="mt-10 w-full flex flex-col items-center">
+      <div className="mt-10 w-full flex flex-col items-center ">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        {/* GRID DE SKILLS: simplifiquei pra não misturar flex+grid,
-            e adicionei justify-items-center pra centralizar os cards
-            dentro de cada coluna/linha do grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 lg:gap-4 xl:gap-6 mt-10 justify-items-center">
+       
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 md:gap-5 lg:gap-4 xl:gap-6 mt-10 justify-items-center">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -127,8 +122,7 @@ export default function Sobre() {
           />
         </div>
 
-        {/* BOX DE CERTIFICADOS: mx-auto já não é mais necessário porque
-            o pai é flex items-center, mas deixei como reforço, não atrapalha */}
+       
         <div className="mt-10 bg-[#061825] rounded-2xl w-[90%] sm:w-fit mx-auto p-6 lg:p-6 md:p-4 justify-center items-center flex flex-col">
           <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
             Certificados
@@ -150,7 +144,7 @@ export default function Sobre() {
             />
             <CardCertificados
               titulo="Udmey"
-              habilidades="Angular 19 COMPLETO do zero"
+              habilidades="Angular 19 COMPLETO"
             />
             <CardCertificados
               titulo="Udemy"
@@ -177,14 +171,13 @@ export default function Sobre() {
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
         </div>
-        <div className="scale-35 sm:scale-80 lg:scale-100 w-fit">
+        <div className="scale-35 sm:scale-80 lg:scale-90 xl:scale-100 w-fit">
           <GitHubCalendar
               username="rafaellfckkj"
               colorScheme="light"
               className="mt-10 mb-25 ml-10 "
             />
         </div>
-       x
       </div>
     </div>
   );

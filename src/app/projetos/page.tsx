@@ -12,7 +12,7 @@ export default function Projetos() {
   const [categoria, setCategoria] = useState("Todos");
 
   return (
-    <div className="mb-50 w-125 sm:w-full ">
+    <div className="mb-30 w-full ">
       {/* Textos */}
       <div className="text-center sm:m-0 sm:mt-20 mt-25">
         <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0">Meus Projetos</h1>
@@ -59,7 +59,7 @@ export default function Projetos() {
       </div>
 
       {/* Card dos Projetos  */}
-      <div className="sm:max-w-275 xl:max-w-275 lg:max-w-180  sm:mx-auto mt-16">
+      <div className="sm:max-w-275 xl:max-w-275 lg:max-w-180  sm:mx-auto mt-16 ">
         <div
           className="
       grid

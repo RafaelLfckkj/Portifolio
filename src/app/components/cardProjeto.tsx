@@ -75,14 +75,14 @@ export default function CardProjeto({
       <div className="flex justify-center gap-7 mt-5 font-bold">
         <Link
           href={repositorio}
-          className="bg-[#66b09b] w-fit p-1 rounded hover:bg-[#538e7d] duration-150"
+          className="bg-[#66b09b] w-fit p-1 rounded hover:bg-[#538e7d] duration-150 text-center"
         >
           Repositório
           <FontAwesomeIcon icon={faGithub} className="ml-2" />
         </Link>
         <Link
           href={visualizar}
-          className="bg-[#66b09b] w-fit p-1 px-2 rounded hover:bg-[#538e7d] duration-150 "
+          className="bg-[#66b09b] w-fit p-1 px-2 rounded hover:bg-[#538e7d] duration-150 text-center "
         >
           Visualizar
           <FontAwesomeIcon icon={faPlay} className="ml-2" />

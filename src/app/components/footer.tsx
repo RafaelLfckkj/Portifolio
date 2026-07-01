@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-5 left-1/2 -translate-x-1/2">
-      <div className="p-3 w-130 ml-25 md:m-0 lg:max-w-156.75 bg-[#05131E] rounded-3xl flex items-center justify-between mx-auto self-end gap-5 ">
+    <footer className="absolute bottom-5 left-1/2 -translate-x-1/2 scale-60 sm:scale-90 lg:scale-100">
+      <div className="p-3 w-130 md:m-0 lg:max-w-156.75 bg-[#05131E] rounded-3xl flex items-center justify-between mx-auto self-end gap-5 ">
         <div className="flex gap-5">
           <Link href="https://github.com/RafaelLfckkj">
             <FontAwesomeIcon
