@@ -30,11 +30,11 @@ import CardCertificados from "../components/cardCertificados";
 
 export default function Sobre() {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 ">
+    <div className="flex flex-col justify-center items-center gap-10 mt-20 mb-20 w-full">
       {/* ------------------ */}
 
       {/* textos sobre mim */}
-      <div className="flex justify-center items-center xl:w-240 xl:gap-32 lg:w-230 ">
+      <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
         <div className="w-100 xl:m-0 lg:ml-22">
           <h1 className="text-5xl mb-6 text-[#7ED8BF]">Quem sou eu?</h1>
@@ -80,10 +80,10 @@ export default function Sobre() {
 
       {/* ------------------ */}
 
-      <div className="mt-10">
+      <div className="mt-10 w-full sm:w-fit ">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-        <div className="lg:flex md:grid md:gap-5 justify-center items-center xl:gap-6 lg:gap-4 mt-10 sm:grid-cols-Z">
+        <div className="flex md:grid lg:flex gap-2 md:gap-5 justify-center sm:items-center xl:gap-6 lg:gap-4 mt-10 sm:grid-cols-1 md:grid-cols-3 grid-cols-4 ">
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -126,7 +126,7 @@ export default function Sobre() {
             Certificados
           </h1>
  
-          <div className="grid grid-cols-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 lg:ml-0 lg:mt-5 md:ml-35">
+          <div className="grid sm:grid-cols-3 justify-center items-center lg:gap-4 xl:gap-4 md:gap-2 lg:ml-0 lg:mt-5 md:ml-35 gap-2">
             <CardCertificados
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
@@ -163,7 +163,7 @@ export default function Sobre() {
           </div>
         </div>
 
-        <div className="mt-25">
+        <div className="mt-25 w-fit">
           <h1 className="text-center font-bold text-6xl">
             Minhas <br />
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
