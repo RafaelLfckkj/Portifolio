@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido para apresentar minha trajetória, projetos e habilidades como estudante de Ciência da Computação e futuro desenvolvedor Back-end/Full-Stack.
 
-🌐 **Acesse ao vivo:** [portifolio-flame-chi.vercel.app](https://portifolio-flame-chi.vercel.app)
+🌐 **Acesse ao vivo:** [rafaellfcportifolio.vercel.app](https://portifolio-flame-chi.vercel.app)
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
