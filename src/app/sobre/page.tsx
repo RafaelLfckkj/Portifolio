@@ -143,7 +143,7 @@ export default function Sobre() {
               habilidades="Next.js COMPLETO do zero"
             />
             <CardCertificados
-              titulo="Udmey"
+              titulo="Udemey"
               habilidades="Angular 19 COMPLETO"
             />
             <CardCertificados
