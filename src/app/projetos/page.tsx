@@ -76,7 +76,7 @@ export default function Projetos() {
             habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
             repositorio="https://github.com/RafaelLfckkj/Portifolio"
             visualizar="https://rafaellfcportifolio.vercel.app"
-            imagem="/PortifolioPrint.png"
+            imagem="/ProjetoPortifolioPrint.png"
             categoriaFiltro="Front-End"
             filtroAtivo={categoria}
             buscaAtiva={busca}

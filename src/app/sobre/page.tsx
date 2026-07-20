@@ -37,9 +37,9 @@ export default function Sobre() {
       <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
         <div className="w-full sm:w-100 xl:m-0 lg:ml-22">
-          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold w-150">Quem sou eu?</h1>
+          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold sm:w-150">Quem sou eu?</h1>
 
-          <h2 className="text-2xl leading-tight sm:mb-0 mb-5">
+          <h2 className="text-2xl leading-tight sm:mb-0 mb-5 sm:mx-0 mx-5">
             Técnico em T.I
             <span className="text-[#7ED8BF]"> Bacharelado</span> em Ciencia da
             Computação e{" "}
@@ -49,7 +49,7 @@ export default function Sobre() {
 
         {/* textos */}
         <div>
-          <p className="xl:w-125 sm:text-sm text-[10px] text-center leading-relaxed sm:text-justify lg:w-90 md:w-80">
+          <p className="xl:w-125 sm:text-sm text-[10px] text-center leading-relaxed sm:text-justify lg:w-90 md:w-80 mx-5 sm:mx-0">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
             <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
             <span className="text-[#7ED8BF]">UNASP</span>. Estou me
