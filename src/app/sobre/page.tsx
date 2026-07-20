@@ -37,7 +37,7 @@ export default function Sobre() {
       <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
         <div className="w-full sm:w-100 xl:m-0 lg:ml-22">
-          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold">Quem sou eu?</h1>
+          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold w-150">Quem sou eu?</h1>
 
           <h2 className="text-2xl leading-tight sm:mb-0 mb-5">
             Técnico em T.I

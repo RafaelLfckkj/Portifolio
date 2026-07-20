@@ -72,10 +72,10 @@ export default function Projetos() {
         >
           <CardProjeto
             titulo="Portifolio"
-            texto="Portfólio pessoal para apresentar meus projetos e habilidades"
+            texto="Portfólio pessoal para apresentar meus projetos e habilidades."
             habilidades={["Next.js", "TailwindCSS", "TypeScript", "Front-End"]}
             repositorio="https://github.com/RafaelLfckkj/Portifolio"
-            visualizar="https://portifolio-flame-chi.vercel.app"
+            visualizar="https://rafaellfcportifolio.vercel.app"
             imagem="/PortifolioPrint.png"
             categoriaFiltro="Front-End"
             filtroAtivo={categoria}
@@ -92,7 +92,6 @@ export default function Projetos() {
               "Mobile",
             ]}
             repositorio="https://github.com/RafaelLfckkj/MemoryBotApp"
-            visualizar="https://github.com/RafaelLfckkj/MemoryBotApp"
             imagem="/MemoryBotAppPrint.png"
             categoriaFiltro="Mobile"
             filtroAtivo={categoria}
@@ -103,7 +102,6 @@ export default function Projetos() {
             texto="CRUD de agendamentos feito em Java com Spring Boot."
             habilidades={["Java", "Spring Boot", "API REST", "Back-end"]}
             repositorio="https://github.com/RafaelLfckkj/CRUD"
-            visualizar="https://github.com/RafaelLfckkj/CRUD"
             imagem="/AgendadorHorarioPrint.png"
             categoriaFiltro="Back-End"
             filtroAtivo={categoria}
@@ -117,6 +115,16 @@ export default function Projetos() {
             visualizar="https://gerador-de-certificados-blush.vercel.app"
             imagem="/GeradorCertificados.png"
             categoriaFiltro="Front-End"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
+          />
+          <CardProjeto
+            titulo="Casa de Hamburguer"
+            texto="Sistema web de pedidos para hamburgueria | em desenvolvimento."
+            habilidades={["React.js", "TailwindCSS", "TypeScript", "PostgreSQL", "Node.js", "Full-Stack"]}
+            repositorio="https://github.com/RafaelLfckkj/CasaDoHamburguer"
+            imagem="/CasaDeHambuguerPrint.png"
+            categoriaFiltro="Full-Stack"
             filtroAtivo={categoria}
             buscaAtiva={busca}
           />

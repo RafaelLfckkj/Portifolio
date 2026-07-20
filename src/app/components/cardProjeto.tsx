@@ -3,7 +3,7 @@ interface CardProjetoProps {
   texto: string;
   habilidades: string[];
   repositorio: string;
-  visualizar: string;
+  visualizar?: string;
   imagem: string;
   categoriaFiltro: string;
   filtroAtivo: string;
@@ -80,13 +80,15 @@ export default function CardProjeto({
           Repositório
           <FontAwesomeIcon icon={faGithub} className="ml-2" />
         </Link>
-        <Link
-          href={visualizar}
-          className="bg-[#66b09b] w-fit p-1 px-2 rounded hover:bg-[#538e7d] duration-150 text-center "
-        >
-          Visualizar
-          <FontAwesomeIcon icon={faPlay} className="ml-2" />
-        </Link>
+        {visualizar && (
+          <Link
+            href={visualizar}
+            className="bg-[#66b09b] w-fit p-1 px-2 rounded hover:bg-[#538e7d] duration-150 text-center "
+          >
+            Visualizar
+            <FontAwesomeIcon icon={faPlay} className="ml-2" />
+          </Link>
+        )}
       </div>
     </div>
   );
