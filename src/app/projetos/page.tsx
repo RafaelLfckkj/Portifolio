@@ -15,7 +15,9 @@ export default function Projetos() {
     <div className="mb-30 w-full ">
       {/* Textos */}
       <div className="text-center sm:m-0 sm:mt-20 mt-25">
-        <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0">Meus Projetos</h1>
+        <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0">
+          Meus Projetos
+        </h1>
 
         <h2 className="text-2xl font-bold sm:m-0 mt-5 w-full">
           Aqui estão alguns dos meus projetos !
@@ -121,17 +123,43 @@ export default function Projetos() {
           <CardProjeto
             titulo="Casa de Hamburguer"
             texto="Sistema web de pedidos para hamburgueria | em desenvolvimento."
-            habilidades={["React.js", "TailwindCSS", "TypeScript", "PostgreSQL", "Node.js", "Full-Stack"]}
+            habilidades={[
+              "React.js",
+              "TailwindCSS",
+              "TypeScript",
+              "PostgreSQL",
+              "Node.js",
+              "Full-Stack",
+            ]}
             repositorio="https://github.com/RafaelLfckkj/CasaDoHamburguer"
             imagem="/CasaDeHambuguerPrint.png"
             categoriaFiltro="Full-Stack"
             filtroAtivo={categoria}
             buscaAtiva={busca}
           />
+          <CardProjeto
+            titulo="Gerador de QrCode"
+            texto="Gerador de QrCode e armazenado no AWS em png."
+            habilidades={["Java", "Spring Boot", "Docker", "AWS", "Back-End"]}
+            repositorio="https://github.com/RafaelLfckkj/QrCodeGenerator"
+            imagem="/GeradorQrCodePrint.png"
+            categoriaFiltro="Back-End"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
+          />
+          <CardProjeto
+            titulo="Dev Burguer"
+            texto="Lanchonete online em React com pedidos via WhatsApp."
+            habilidades={["React.js", "TailwindCSS", "JavaScript", "Front-End"]}
+            repositorio="https://github.com/RafaelLfckkj/HambugeriaCardapio"
+            visualizar="https://hambugeria-cardapio.vercel.app"
+            imagem="/DevBurguerPrint.png"
+            categoriaFiltro="Front-End"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
+          />
         </div>
       </div>
-
-      
     </div>
   );
 }

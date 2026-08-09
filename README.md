@@ -17,7 +17,7 @@ Sou estudante de Ciência da Computação (2º/8 semestres) na UNASP, técnico e
 
 ## 🖼️ Preview
 
-![Preview do Portfólio](./public/PortifolioPrint.png)
+![Preview do Portfólio](./public/ProjetoPortifolioPrint.png)
 
 ## ✨ Funcionalidades
 
@@ -74,8 +74,9 @@ src/app/
 ## 🎯 Próximos passos
 
 - [ ] Toggle de idioma completo (PT/EN) em todo o site
-- [ ] Projeto Full-Stack para adicionar ao portfólio
+- [ ] Mais Projetos no Portifolio
 - [ ] Otimizações de performance e SEO
+- [ ] Melhorar a SideBar
 
 ## 📬 Contato
 
