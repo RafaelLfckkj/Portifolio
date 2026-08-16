@@ -158,6 +158,17 @@ export default function Projetos() {
             filtroAtivo={categoria}
             buscaAtiva={busca}
           />
+           <CardProjeto
+            titulo="Lista de Tarefas"
+            texto="Lista de tarefas com funcionalidades de adição, edição e remoção."
+            habilidades={["Next.js", "TailwindCSS", "TypeScript", "PostgreSQL", "Prisma", "Full-Stack"]}
+            repositorio="https://github.com/RafaelLfckkj/ListaDeTarefas"
+            visualizar="https://lista-de-tarefas-eosin-one.vercel.app"
+            imagem="/ListaTarefaPrint.png"
+            categoriaFiltro="Full-Stack"
+            filtroAtivo={categoria}
+            buscaAtiva={busca}
+          />
         </div>
       </div>
     </div>
