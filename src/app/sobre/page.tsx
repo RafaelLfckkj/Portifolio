@@ -16,6 +16,7 @@ import {
   faFigma,
   faGoogleDrive,
   faOpera,
+  faPostgresql,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { SiNextdotjs } from "react-icons/si";
@@ -105,6 +106,7 @@ export default function Sobre() {
               { icone: faPython, nome: "Python" },
               { icone: faNodeJs, nome: "Node.js" },
               { icone: faDatabase, nome: "SQL, MySql" },
+              {icone: faPostgresql, nome: "Postgresql"},
             ]}
           />
           <CardSkill
@@ -136,7 +138,7 @@ export default function Sobre() {
             <CardCertificados titulo="Udemy" habilidades="Banco de Dados SQL" />
             <CardCertificados
               titulo="Santander Academy"
-              habilidades="BootCamp - em andamento"
+              habilidades="BootCamp - 1° Semestre"
             />
             <CardCertificados
               titulo="Udemy"

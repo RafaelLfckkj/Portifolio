@@ -36,7 +36,7 @@ export default function Home() {
     <div className="lg:max-w-6xl mx-auto h-screen lg:flex lg:items-center lg:justify-between lg:px-20 md:grid md:items-center md:justify-center lg:mb-0 sm:mb-70 mb-20 grid justify-center items-center">
       {/* textos */}
       <div className="max-w-md xl:m-0 lg:ml-20 md:mt-30 mt-20 md:text-center lg:text-left text-center sm:ml-0">
-        <div className="text-sm/8 ">
+        <div className="text-sm/8 flex flex-col gap-2">
           <h1 className="md:text-[40px] text-[30px] font-bold">Olá, eu me chamo</h1>
           <h2 className="md:text-[35px] text-[20px] font-bold text-[#7ED8BF]">
             Rafael Oliveira
