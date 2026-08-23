@@ -112,7 +112,7 @@ export default function Contato() {
 
               <button
                 type="submit"
-                className="flex bg-[#183153] p-3 w-fit  px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 sm:mb-0 mb-10"
+                className="flex bg-[#183153] p-3 w-fit  px-14 rounded-md cursor-pointer text-lg hover:bg-[#132641] duration-200 mt-8 sm:mb-0 mb-10 "
               >
                 <p>Enviar</p>
               </button>

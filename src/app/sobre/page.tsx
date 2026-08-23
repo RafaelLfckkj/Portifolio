@@ -140,7 +140,10 @@ export default function Sobre() {
               titulo="Udemy"
               habilidades="Java POO COMPLETO do zero"
             />
-            <CardCertificados titulo="Udemy" habilidades="Banco de Dados SQL" />
+            <CardCertificados 
+              titulo="Udemy" 
+              habilidades="Banco de Dados SQL" 
+            />
             <CardCertificados
               titulo="Santander Academy"
               habilidades="BootCamp - 1° Semestre"
