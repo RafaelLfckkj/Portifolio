@@ -18,11 +18,10 @@ export default function Home() {
       strings: [
         "Técnico em TI",
         "Ciência da Computação",
-        "Engenheiro de Software",
         "Desenvolvedor Full-Stack",
         "Sempre em foco!",
       ],
-      typeSpeed: 80,
+      typeSpeed: 90,
       backSpeed: 50,
       backDelay: 1500,
       loop: true,
@@ -69,12 +68,13 @@ export default function Home() {
       </div>
 
       {/* Imagem */}
-      <div className=" transition-transform duration-500 hover:scale-105 sm:m-0 w-70 justify-center items-center sm:w-100">
+      <div className=" transition-transform duration-500 hover:scale-105 sm:m-0 justify-center items-center sm:w-100 w-100 h-100 rounded-full overflow-hidden border-3 border-principal shadow-lg shadow-[#62a894]">
         <Image
-          src="/Eu.png"
+          src="/eumesmo.jpg"
           alt="Foto de perfil do Rafael"
           width={400}
           height={400}
+          className="w-full h-full object-cover"
         />
       </div>
     </div>

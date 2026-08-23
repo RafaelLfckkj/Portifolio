@@ -19,6 +19,7 @@ import {
   faGoogleDrive,
   faOpera,
   faPostgresql,
+  faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { SiNextdotjs } from "react-icons/si";
@@ -113,6 +114,8 @@ export default function Sobre() {
               { icone: faNodeJs, nome: "Node.js" },
               { icone: faDatabase, nome: "SQL, MySql" },
               { icone: faPostgresql, nome: "Postgresql" },
+              {icone: faDocker, nome: "Docker"}
+              
             ]}
           />
           <CardSkill
@@ -126,6 +129,7 @@ export default function Sobre() {
               { icone: faGoogleDrive, nome: "Google Drive" },
               { icone: faTerminal, nome: "Terminal" },
               { icone: faOpera, nome: "Opera" },
+            
             ]}
           />
         </div>

@@ -8,7 +8,7 @@ export default function CardCertificados({
   habilidades,
 }: CardCertificadosProps) {
   return (
-    <div className="bg-[#222A3D] w-full sm:w-60 xl:w-70 p-4 rounded-xl" data-aos="fade-left">
+    <div className="bg-[#222A3D] w-full sm:w-60 xl:w-70 p-4 rounded-sm border" data-aos="fade-left">
       <h1 className="text-principal font-bold text-md xl:text-lg">{titulo}</h1>
       <p className="text-[#9B9C9C] text-sm font-bold">{habilidades}</p>
     </div>

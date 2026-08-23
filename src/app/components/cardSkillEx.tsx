@@ -15,7 +15,7 @@ interface CardSkillExProps {
 
 export default function CardSkillEx({ titulo, habilidades }: CardSkillExProps) {
   return (
-    <div className="bg-[#061825] rounded-2xl p-6 xl:w-70 lg:w-60 h-fit flex flex-col items-center gap-6 border border-[#1b2c3d] md:w-80  w-60">
+    <div className="bg-[#061825] rounded-2xl p-6 xl:w-70 lg:w-60 h-fit flex flex-col items-center gap-6 md:w-80  w-60">
       <h3 className="text-principal text-xl font-semibold">{titulo}</h3>
 
       <div className="grid grid-cols-4 gap-5">
