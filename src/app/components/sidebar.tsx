@@ -21,19 +21,19 @@ export default function Sidebar() {
   return (
     <>
       {/* Sidebar Desktop */}
-      <div className="hidden lg:fixed left-10 top-1/2 -translate-y-1/2 bg-[#05131E] text-white w-16 lg:flex flex-col items-start justify-between py-6 px-5 rounded-3xl hover:w-3xs duration-700 ease-in-out overflow-hidden group">
+      <div className="hidden lg:fixed left-10 top-1/2 -translate-y-1/2 bg-[#05131E] text-white w-16 lg:flex flex-col items-start justify-between py-6 px-5 rounded-xl hover:w-3xs duration-700 ease-in-out overflow-hidden group z-10">
         <div className="mb-10">
-          <span className="text-[#7ED8BF]  -ml-2 text-lg font-mono font-bold group-hover:hidden">
+          <span className="text-principal  -ml-2 text-lg font-mono font-bold group-hover:hidden">
             {"<R/>"}
           </span>
 
-          <span className="hidden group-hover:block text-[#7ED8BF] text-lg font-mono font-bold whitespace-nowrap">
+          <span className="hidden group-hover:block text-principal text-lg font-mono font-bold whitespace-nowrap">
             {"<Rafael/>"}
           </span>
         </div>
         <div className="grid gap-10 ">
           <ul className="grid gap-10 ">
-            <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
+            <li className="flex hover:bg-secondary hover:w-full rounded-lg hover:p-2 duration-200">
               <FontAwesomeIcon icon={faHouse} size="lg" />
               <Link
                 className="hidden group-hover:block ml-2 hover:underline duration-100"
@@ -42,7 +42,7 @@ export default function Sidebar() {
                 Home
               </Link>
             </li>
-            <li className="flex hover:bg-[#1C2D3A] hover:w-full rounded-lg hover:p-2 duration-200">
+            <li className="flex hover:bg-secondary hover:w-full rounded-lg hover:p-2 duration-200">
               <FontAwesomeIcon icon={faUser} size="lg" />
               <Link
                 className="hidden group-hover:block ml-2 whitespace-nowrap hover:underline duration-100"
@@ -90,7 +90,7 @@ export default function Sidebar() {
           <FontAwesomeIcon icon={faBars} size="lg" />
         </button>
 
-        <span className="text-[#7ED8BF] text-lg font-mono font-bold">
+          <span className="text-principal text-lg font-mono font-bold">
           {"<Rafael/>"}
         </span>
       </div>
@@ -115,7 +115,7 @@ export default function Sidebar() {
         </button>
 
         <ul className="grid gap-8">
-          <li className="border-l-2 border-[#7ED8BF] pl-3">
+          <li className="border-l-2 border-principal pl-3">
             <Link
               href="/"
               onClick={() => setMenuAberto(false)}
@@ -125,7 +125,7 @@ export default function Sidebar() {
               Home
             </Link>
           </li>
-          <li className="pl-3 border-l-2 border-[#7ED8BF]">
+          <li className="pl-3 border-l-2 border-principal">
             <Link
               href="/sobre"
               onClick={() => setMenuAberto(false)}
@@ -135,7 +135,7 @@ export default function Sidebar() {
               Sobre Mim
             </Link>
           </li>
-          <li className="pl-3 border-l-2 border-[#7ED8BF]">
+          <li className="pl-3 border-l-2 border-principal">
             <Link
               href="/projetos"
               onClick={() => setMenuAberto(false)}
@@ -145,7 +145,7 @@ export default function Sidebar() {
               Projetos
             </Link>
           </li>
-          <li className="pl-3 border-l-2 border-[#7ED8BF]">
+          <li className="pl-3 border-l-2 border-principal">
             <Link
               href="/contato"
               onClick={() => setMenuAberto(false)}

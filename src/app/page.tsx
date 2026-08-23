@@ -40,12 +40,12 @@ export default function Home() {
       <div className="max-w-md xl:m-0 lg:ml-20 md:mt-30 mt-20 md:text-center lg:text-left text-center sm:ml-0">
         <div className="text-sm/8 flex flex-col gap-2">
           <h1 className="md:text-[40px] text-[30px] font-bold">Olá, eu me chamo</h1>
-          <h2 className="md:text-[35px] text-[20px] font-bold text-[#7ED8BF]">
+          <h2 className="md:text-[35px] text-[20px] font-bold text-principal">
             Rafael Oliveira
           </h2>
         </div>
 
-        <div className="sm:text-3xl md:text-3xl font-medium text-[#7ED8BF] flex items-center h-10 mt-2 md:text-center lg:text-left text-center text-lg">
+        <div className="sm:text-3xl md:text-3xl font-medium text-principal flex items-center h-10 mt-2 md:text-center lg:text-left text-center text-lg">
           <span className="text-center w-full sm:text-left" ref={elementoDigitando}></span>
         </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
           </Link>
 
           <Link
-            className="border rounded-3xl sm:mt-6 px-6 py-2 border-[#7ED8BF] hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl font-bold w-60 sm:w-50 text-center"
+            className="border rounded-3xl sm:mt-6 px-6 py-2 border-principal hover:border-[#275346] hover:text-gray-300 duration-300 shadow-xl font-bold w-60 sm:w-50 text-center"
             href="https://wa.me/5511948751574"
           >
             Fale Comigo

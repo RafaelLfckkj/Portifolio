@@ -26,14 +26,14 @@ export default function Contato() {
     <div className="mb-30 w-full sm:mt-0 mt-30">
       {/* Textos e etc */}
       <div className="items-center justify-center text-center mb-50 md:mt-30 ">
-        <h1 className="sm:text-5xl text-4xl text-[#7ED8BF] font-bold mt-10 mb-10">
+        <h1 className="sm:text-5xl text-4xl text-principal font-bold mt-10 mb-10">
           ONDE VOCÊ PODE ME <br /> ENCONTRAR?
         </h1>
 
         <p className="text-3xl mb-10 font-bold">
           Sinta se a vontade para se{" "}
-          <span className="text-[#7ED8BF] ">conectar</span> <br />e{" "}
-          <span className="text-[#7ED8BF] ">conversar</span> comigo
+          <span className="text-principal ">conectar</span> <br />e{" "}
+          <span className="text-principal ">conversar</span> comigo
         </p>
 
         {/* Icones */}

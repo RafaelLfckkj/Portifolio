@@ -5,11 +5,15 @@
   --foreground: #171717;
 }
 
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-principal: #7ED8BF;
+  --color-secondary: #1D2A39;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +27,7 @@
 .bg-gradient-portfolio {
    background: linear-gradient(
     to bottom,
-    #0a0a0a 0%,
+    var(--background) 0%,
     #2dd4bf 100%
   );
 

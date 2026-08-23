@@ -40,15 +40,15 @@ export default function Sobre() {
       <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
         <div className="w-full sm:w-100 xl:m-0 lg:ml-22">
-          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold sm:w-150">
+          <h1 className="text-5xl mb-6 text-principal font-bold sm:w-150">
             Quem sou eu?
           </h1>
 
           <h2 className="text-2xl leading-tight sm:mb-0 mb-5 sm:mx-0 mx-5">
             Técnico em T.I
-            <span className="text-[#7ED8BF]"> Bacharelado</span> em Ciencia da
+            <span className="text-principal"> Bacharelado</span> em Ciencia da
             Computação e{" "}
-            <span className="text-[#7ED8BF]"> Apaixonado por Tecnologia</span>
+            <span className="text-principal"> Apaixonado por Tecnologia</span>
           </h2>
         </div>
 
@@ -56,28 +56,28 @@ export default function Sobre() {
         <div>
           <p className="xl:w-125 sm:text-sm text-[10px] text-center leading-relaxed sm:text-justify lg:w-90 md:w-80 mx-5 sm:mx-0">
             Tenho 18 anos, sou estudante de Ciência da Computação{" "}
-            <span className="text-[#7ED8BF]">(2/8)</span> e formado em TI pelo{" "}
-            <span className="text-[#7ED8BF]">UNASP</span>. Estou me
+            <span className="text-principal">(2/8)</span> e formado em TI pelo{" "}
+            <span className="text-principal">UNASP</span>. Estou me
             especializando em Java, Next.js e TypeScript, com o objetivo de
             atuar como desenvolvedor{" "}
-            <span className="text-[#7ED8BF]">Backend ou Full-Stack. </span>
+              <span className="text-principal">Backend ou Full-Stack. </span>
             <br />
             <br />
-            <span className="text-[#7ED8BF]">Sou apaixonado</span> por
+            <span className="text-principal">Sou apaixonado</span> por
             tecnologia, animes e jogos, e estou sempre buscando expandir meus
             horizontes estudo{" "}
-            <span className="text-[#7ED8BF]">inglês e espanhol</span> para me
+            <span className="text-principal">inglês e espanhol</span> para me
             preparar para oportunidades{" "}
-            <span className="text-[#7ED8BF]">globais</span>, e estou aberto a
+            <span className="text-principal">globais</span>, e estou aberto a
             oportunidades
-            <span className="text-[#7ED8BF]"> internacionais.</span> <br />{" "}
+            <span className="text-principal"> internacionais.</span> <br />{" "}
             <br />
-            Também atuo como <span className="text-[#7ED8BF]">
+            Também atuo como <span className="text-principal">
               voluntário
             </span>{" "}
-            na área de <span className="text-[#7ED8BF]">mídia</span> da minha
+            na área de <span className="text-principal">mídia</span> da minha
             igreja, onde desenvolvo proatividade, trabalho em equipe e{" "}
-            <span className="text-[#7ED8BF]">responsabilidade</span> no dia a
+            <span className="text-principal">responsabilidade</span> no dia a
             dia.
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function Sobre() {
         </div>
 
         <div className="mt-10 bg-[#061825] rounded-2xl w-[90%] sm:w-fit mx-auto p-6 lg:p-6 md:p-4 justify-center items-center flex flex-col">
-          <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
+          <h1 className="text-center text-3xl font-bold text-principal mb-5">
             Certificados
           </h1>
 
@@ -190,7 +190,7 @@ export default function Sobre() {
         <div className="mt-25 w-full">
           <h1 className="text-center font-bold text-4xl sm:text-5xl lg:text-6xl px-4">
             Minhas <br />
-            <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
+            <span className="text-principal">CONTRIBUIÇÕES</span>
           </h1>
         </div>
         <div

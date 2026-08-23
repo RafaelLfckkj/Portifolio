@@ -38,7 +38,7 @@ export default function CardProjeto({
   }
 
   return (
-    <div className="w-full max-w-90 p-6 min-h-120 rounded-3xl border border-white bg-[#222A3D] mx-auto -z-5" data-aos="fade-down">
+    <div className="w-full max-w-90 p-6 min-h-120 rounded-3xl border border-white bg-[#222A3D] mx-auto" data-aos="fade-down">
       <p className="text-center font-bold mb-3">{titulo}</p>
       <p className="text-left mb-5">{texto}</p>
 

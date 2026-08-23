@@ -15,7 +15,7 @@ export default function Projetos() {
     <div className="mb-30 w-full ">
       {/* Textos */}
       <div className="text-center sm:m-0 sm:mt-20 mt-25">
-        <h1 className="text-[#7ED8BF] text-5xl font-bold sm:m-0">
+        <h1 className="text-principal text-5xl font-bold sm:m-0">
           Meus Projetos
         </h1>
 
@@ -36,7 +36,7 @@ export default function Projetos() {
               onChange={(e) => setBusca(e.target.value)}
             />
 
-            <div className="absolute right-3  top-1/2  -translate-y-1/2 w-10 h-10 bg-[#7ED8BF] rounded-full flex items-center justify-center cursor-pointer">
+            <div className="absolute right-3  top-1/2  -translate-y-1/2 w-10 h-10 bg-principal rounded-full flex items-center justify-center cursor-pointer">
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
                 className="text-white"
