@@ -1,3 +1,5 @@
+"use client";
+
 import {
   faHtml5,
   faCss3,
@@ -38,7 +40,9 @@ export default function Sobre() {
       <div className="sm:flex justify-center sm:items-center xl:w-240 xl:gap-32 lg:w-230 grid text-center sm:text-left">
         {/* titulos */}
         <div className="w-full sm:w-100 xl:m-0 lg:ml-22">
-          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold sm:w-150">Quem sou eu?</h1>
+          <h1 className="text-5xl mb-6 text-[#7ED8BF] font-bold sm:w-150">
+            Quem sou eu?
+          </h1>
 
           <h2 className="text-2xl leading-tight sm:mb-0 mb-5 sm:mx-0 mx-5">
             Técnico em T.I
@@ -84,8 +88,10 @@ export default function Sobre() {
       <div className="mt-10 w-full flex flex-col items-center ">
         <h1 className="text-center text-3xl font-bold">Habilidades</h1>
 
-       
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 md:gap-5 lg:gap-4 xl:gap-6 mt-10 justify-items-center">
+        <div
+          className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 md:gap-5 lg:gap-4 xl:gap-6 mt-10 justify-items-center"
+          data-aos="fade-up"
+        >
           <CardSkillEx
             titulo="Front-End"
             habilidades={[
@@ -106,7 +112,7 @@ export default function Sobre() {
               { icone: faPython, nome: "Python" },
               { icone: faNodeJs, nome: "Node.js" },
               { icone: faDatabase, nome: "SQL, MySql" },
-              {icone: faPostgresql, nome: "Postgresql"},
+              { icone: faPostgresql, nome: "Postgresql" },
             ]}
           />
           <CardSkill
@@ -124,7 +130,6 @@ export default function Sobre() {
           />
         </div>
 
-       
         <div className="mt-10 bg-[#061825] rounded-2xl w-[90%] sm:w-fit mx-auto p-6 lg:p-6 md:p-4 justify-center items-center flex flex-col">
           <h1 className="text-center text-3xl font-bold text-[#7ED8BF] mb-5">
             Certificados
@@ -173,12 +178,15 @@ export default function Sobre() {
             <span className="text-[#7ED8BF]">CONTRIBUIÇÕES</span>
           </h1>
         </div>
-        <div className="scale-35 sm:scale-80 lg:scale-90 xl:scale-100 w-fit">
+        <div
+          className="scale-35 sm:scale-80 lg:scale-90 xl:scale-100 w-fit"
+          data-aos="fade-down"
+        >
           <GitHubCalendar
-              username="rafaellfckkj"
-              colorScheme="light"
-              className="mt-10 mb-25 ml-10 "
-            />
+            username="rafaellfckkj"
+            colorScheme="light"
+            className="mt-10 mb-25 ml-10 "
+          />
         </div>
       </div>
     </div>

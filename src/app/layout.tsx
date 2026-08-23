@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import AosInit from "./components/AosInit";
+
 import Sidebar from "./components/sidebar";
 import Footer from "./components/footer";
 
@@ -26,11 +28,11 @@ export const metadata: Metadata = {
   description: "Portifolio do Rafael, Desenvolvedor full stack",
 };
 
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap', // Melhora o carregamento evitando texto invisível
+  subsets: ["latin"],
+  display: "swap", // Melhora o carregamento evitando texto invisível
 });
 
 export default function RootLayout({
@@ -44,15 +46,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${inter.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col text-shadow-lg text-white">
-
         <div className="fixed inset-0 -z-10 bg-gradient-portfolio">
           <ParticlesBackground />
         </div>
-        
-        <main style={{ position: "relative", zIndex: 1,}}>
-          {children}
 
+        <main style={{ position: "relative", zIndex: 1 }}>
           <Sidebar />
+          <AosInit />
+          {children}
         </main>
 
         <footer style={{ position: "relative", zIndex: 1 }}>

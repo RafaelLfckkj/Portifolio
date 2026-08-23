@@ -21,7 +21,7 @@ export default function Sidebar() {
   return (
     <>
       {/* Sidebar Desktop */}
-      <div className="hidden lg:fixed left-16 top-1/2 -translate-y-1/2 bg-[#05131E] text-white w-16 lg:flex flex-col items-start justify-between py-6 px-5 rounded-3xl hover:w-3xs duration-700 ease-in-out overflow-hidden group">
+      <div className="hidden lg:fixed left-16 top-1/2 -translate-y-1/2 bg-[#05131E] text-white w-16 lg:flex flex-col items-start justify-between py-6 px-5 rounded-3xl hover:w-3xs duration-700 ease-in-out overflow-hidden group z-10">
         <div className="mb-10">
           <span className="text-[#7ED8BF]  -ml-2 text-lg font-mono font-bold group-hover:hidden">
             {"<R/>"}
