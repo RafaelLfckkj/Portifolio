@@ -169,6 +169,18 @@ export default function Sobre() {
               titulo="Rocketseat"
               habilidades="Angular Curso Introdutorio"
             />
+            <CardCertificados
+              titulo="DIO"
+              habilidades="Introdução Engenharia de Prompts"
+            />
+            <CardCertificados
+              titulo="DIO"
+              habilidades="Fundamentos de IA Moderna"
+            />
+            <CardCertificados
+              titulo="DIO - Itaú"
+              habilidades="Bootcamp Java - em andamento"
+            />
           </div>
         </div>
 
