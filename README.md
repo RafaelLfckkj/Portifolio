@@ -74,9 +74,7 @@ src/app/
 ## 🎯 Próximos passos
 
 - [ ] Toggle de idioma completo (PT/EN) em todo o site
-- [ ] Mais Projetos no Portifolio
-- [ ] Otimizações de performance e SEO
-- [ ] Melhorar a SideBar
+- [ ] Otimizações de performance, SEO e etc
 
 ## 📬 Contato
 
