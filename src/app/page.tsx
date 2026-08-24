@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Imagem */}
       <div className="flex justify-center items-center">
-        <div className=" transition-transform duration-500 hover:scale-105 sm:m-0 justify-center items-center w-50 h-50 sm:w-100  md:w-100 md:h-100 rounded-full overflow-hidden border-3 border-principal shadow-lg shadow-[#62a894]">
+        <div className=" transition-transform duration-500 hover:scale-105 sm:m-0 justify-center items-center w-50 h-50 sm:w-100 sm:h-100  md:w-110 md:h-110 rounded-full overflow-hidden border-3 border-principal shadow-lg shadow-[#62a894]">
         <Image
           src="/eumesmo.jpg"
           alt="Foto de perfil do Rafael"

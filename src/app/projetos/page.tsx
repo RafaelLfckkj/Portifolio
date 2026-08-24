@@ -25,8 +25,8 @@ export default function Projetos() {
       </div>
 
       {/* Filtração dos projetos */}
-      <div className="sm:flex  xl:gap-100 justify-center items-center mt-13 grid">
-        <div className="sm:mr-50 w-82.5 -z-5">
+      <div className="sm:flex xl:gap-100 justify-center items-center mt-13 grid">
+        <div className="sm:mr-50 w-82.5">
           <div className="relative">
             <input
               type="text"
